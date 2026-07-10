@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import {
   Phone,
   MessageCircle,
@@ -60,53 +61,53 @@ export default function HomePage() {
       <MedicalClinicJsonLd />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-brand">
-        {/* Soft parallax background photo */}
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 bg-[url('/hero-doctor-elderly.jpeg')] bg-cover bg-center bg-scroll md:bg-fixed"
-        />
-        {/* Navy gradient for text legibility — lighter so the photo stays visible */}
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-r from-brand/95 via-brand/65 to-transparent"
-        />
-        {/* Soft white line-pattern overlay */}
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 bg-[url('/line-pattern-white.png')] bg-[length:1200px_auto] bg-repeat opacity-5"
-        />
-        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-32">
-          <div className="max-w-2xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-accent-orange/20 px-4 py-1.5 text-sm font-semibold text-accent-orange">
-              <MapPin className="h-4 w-4" />
-              Kuala Nerus, Terengganu
-            </span>
-            <h1 className="mt-5 text-balance font-heading text-4xl font-black leading-tight tracking-[-0.04em] text-brand-foreground sm:text-5xl lg:text-[3.25rem]">
-              Klinik Rawatan Lutut, Sendi &amp; Saraf.{' '}
-              <span className="text-accent-orange">Sihat Bersama Klinik Hejaz.</span>
-            </h1>
-            <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-brand-foreground/80">
-              Klinik Hejaz menawarkan rawatan profesional untuk sakit lutut,
-              sendi, belakang, gout, program berat badan dan banyak lagi — di
-              Kuala Nerus, Kuala Terengganu.
-            </p>
+      <section className="bg-brand">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+          <div className="grid gap-5 lg:grid-cols-[1.15fr_1fr] lg:gap-6">
+            {/* Title card — brighter olive */}
+            <div className="flex flex-col justify-between rounded-3xl bg-brand-light p-8 sm:p-10 lg:p-12">
+              <div>
+                <span className="inline-flex items-center gap-2 rounded-full bg-brand-foreground/15 px-4 py-1.5 text-sm font-semibold text-brand-foreground">
+                  <MapPin className="h-4 w-4" />
+                  Kuala Nerus, Terengganu
+                </span>
+                <h1 className="mt-6 text-balance font-logo text-4xl font-extrabold italic leading-[1.05] tracking-[-0.039em] text-brand-foreground sm:text-5xl lg:text-6xl">
+                  Klinik utama di Kuala Terengganu. Insyallah kita ikhtiar.
+                </h1>
+                <p className="mt-6 max-w-xl text-pretty font-logo text-base italic leading-relaxed text-brand-foreground/85 sm:text-lg">
+                  Jadikan Klinik Hejaz sebagai pilihan keluarga anda. Bersama
+                  dengan doktor yang terlatih dan servis terbaik.
+                </p>
+              </div>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="/rawatan"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-accent-orange px-6 py-3 text-base font-semibold text-accent-orange-foreground transition-opacity hover:opacity-90"
-              >
-                Lihat Semua Rawatan
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-              <Link
-                href="/permohonan"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-foreground/30 bg-transparent px-6 py-3 text-base font-semibold text-brand-foreground transition-colors hover:bg-brand-foreground/10"
-              >
-                <MessageCircle className="h-5 w-5" />
-                WhatsApp Kami
-              </Link>
+              <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+                <Link
+                  href="/permohonan"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-accent-orange px-6 py-3 text-base font-semibold text-accent-orange-foreground transition-opacity hover:opacity-90"
+                >
+                  <MessageCircle className="h-5 w-5" />
+                  WhatsApp Kami
+                </Link>
+                <Link
+                  href="/rawatan"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-foreground/40 bg-transparent px-6 py-3 text-base font-semibold text-brand-foreground transition-colors hover:bg-brand-foreground/10"
+                >
+                  Lihat Semua Rawatan
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Image card */}
+            <div className="relative min-h-[360px] overflow-hidden rounded-3xl sm:min-h-[440px] lg:min-h-full">
+              <Image
+                src="/doktor-konsultasi-pesakit.jpeg"
+                alt="Doktor Klinik Hejaz memberi konsultasi kepada pesakit warga emas"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 45vw"
+                className="object-cover"
+              />
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 const beVietnam = Be_Vietnam_Pro({
   variable: '--font-be-vietnam',
   subsets: ['latin'],
-  weight: ['800'],
+  weight: ['400', '800'],
   style: ['italic'],
 })
 

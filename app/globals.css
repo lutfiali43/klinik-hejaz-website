@@ -10,6 +10,7 @@
   --font-mono: var(--font-geist-mono), 'Geist Mono Fallback';
   --font-logo: var(--font-be-vietnam), 'Be Vietnam Pro Fallback', system-ui, sans-serif;
   --color-brand: var(--brand);
+  --color-brand-light: var(--brand-light);
   --color-brand-foreground: var(--brand-foreground);
   --color-accent-orange: var(--accent-orange);
   --color-accent-orange-foreground: var(--accent-orange-foreground);
@@ -81,6 +82,7 @@
   --chart-5: oklch(0.4 0.06 124);
   --radius: 0.75rem;
   --brand: oklch(0.48 0.08 124);
+  --brand-light: oklch(0.57 0.1 124);
   --brand-foreground: oklch(0.99 0 0);
   --accent-orange: oklch(0.79 0.13 75);
   --accent-orange-foreground: oklch(0.28 0.05 130);
