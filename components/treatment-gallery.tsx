@@ -4,46 +4,54 @@ import { getTreatment } from '@/data/siteData'
 
 type Tone = 'dark' | 'mid' | 'light' | 'accent'
 
-// 9 rawatan disusun secara masonry rawak (ketinggian berselang-seli).
-// `big` = jubin lebih besar; tiada gambar, hanya jubin berwarna.
+// 9 rawatan disusun secara masonry berselang-seli (staggered) merentas 3 kolum.
+// Setiap kolum ada campuran jubin tinggi, sederhana & pendek supaya membentuk mozek.
+// `big` = jubin tumpuan yang lebih besar; tiada gambar, hanya jubin berwarna.
 const tiles: { slug: string; big?: boolean; h: string; tone: Tone }[] = [
+  // Kolum 1
   { slug: 'rawatan-sakit-lutut', big: true, h: 'h-72', tone: 'dark' },
   { slug: 'luka-diabetes', h: 'h-52', tone: 'light' },
   { slug: 'rawatan-gout', h: 'h-44', tone: 'mid' },
-  { slug: 'program-berat-badan', big: true, h: 'h-72', tone: 'accent' },
-  { slug: 'diabetes-dan-darah-tinggi', h: 'h-56', tone: 'light' },
+  // Kolum 2
   { slug: 'rawatan-sakit-belakang', h: 'h-44', tone: 'mid' },
+  { slug: 'program-berat-badan', big: true, h: 'h-72', tone: 'accent' },
+  { slug: 'rawatan-saraf', h: 'h-56', tone: 'light' },
+  // Kolum 3
   { slug: 'kutil-dan-ketuat', big: true, h: 'h-72', tone: 'dark' },
-  { slug: 'rawatan-sakit-kulit', h: 'h-52', tone: 'light' },
-  { slug: 'rawatan-saraf', h: 'h-60', tone: 'mid' },
+  { slug: 'diabetes-dan-darah-tinggi', h: 'h-56', tone: 'mid' },
+  { slug: 'rawatan-sakit-kulit', h: 'h-48', tone: 'light' },
 ]
 
 const toneClasses: Record<
   Tone,
-  { card: string; chip: string; title: string; link: string }
+  { card: string; chip: string; title: string; excerpt: string; link: string }
 > = {
   dark: {
     card: 'bg-brand',
     chip: 'bg-brand-foreground/15 text-brand-foreground group-hover:bg-accent-orange group-hover:text-accent-orange-foreground',
     title: 'text-brand-foreground',
+    excerpt: 'text-brand-foreground/75',
     link: 'text-accent-orange',
   },
   mid: {
     card: 'bg-brand-light',
     chip: 'bg-brand-foreground/20 text-brand-foreground group-hover:bg-accent-orange group-hover:text-accent-orange-foreground',
     title: 'text-brand-foreground',
+    excerpt: 'text-brand-foreground/80',
     link: 'text-brand-foreground',
   },
   light: {
     card: 'bg-secondary',
     chip: 'bg-brand/10 text-brand group-hover:bg-brand group-hover:text-brand-foreground',
     title: 'text-brand',
+    excerpt: 'text-muted-foreground',
     link: 'text-brand',
   },
   accent: {
     card: 'bg-accent-orange',
     chip: 'bg-accent-orange-foreground/15 text-accent-orange-foreground group-hover:bg-accent-orange-foreground group-hover:text-accent-orange',
     title: 'text-accent-orange-foreground',
+    excerpt: 'text-accent-orange-foreground/80',
     link: 'text-accent-orange-foreground',
   },
 }
@@ -71,14 +79,21 @@ export function TreatmentGallery() {
 
             <div>
               <h3
-                className={`font-heading font-bold leading-tight ${t.title} ${
+                className={`font-logo font-extrabold italic leading-tight tracking-[-0.039em] ${t.title} ${
                   big ? 'text-2xl sm:text-3xl' : 'text-lg'
                 }`}
               >
                 {treatment.title}
               </h3>
+              <p
+                className={`mt-2 text-pretty text-sm leading-snug ${t.excerpt} ${
+                  big ? 'line-clamp-3' : 'line-clamp-2'
+                }`}
+              >
+                {treatment.tagline}
+              </p>
               <span
-                className={`mt-2 inline-flex items-center gap-1 text-sm font-semibold ${t.link}`}
+                className={`mt-3 inline-flex items-center gap-1 text-sm font-semibold ${t.link}`}
               >
                 Lihat butiran
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
