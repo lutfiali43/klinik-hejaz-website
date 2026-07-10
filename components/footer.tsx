@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { Phone, MapPin, Clock, MessageCircle } from 'lucide-react'
 import { branches, treatments } from '@/data/siteData'
 
@@ -9,16 +8,12 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <Image
-              src="/klinik-nurani-logo.png"
-              alt="Klinik Nurani"
-              width={180}
-              height={40}
-              className="h-9 w-auto"
-            />
+            <span className="font-logo text-2xl font-extrabold italic leading-none tracking-[-0.039em] text-brand-foreground">
+              Klinik Hejaz
+            </span>
             <p className="mt-4 text-sm leading-relaxed text-brand-foreground/70">
-              Penjagaan kesihatan profesional yang anda boleh percaya. Dua
-              cawangan di Sabak Bernam dan Sungai Buloh, Selangor.
+              Penjagaan kesihatan profesional yang anda boleh percaya di Kuala
+              Nerus, Kuala Terengganu, Terengganu.
             </p>
           </div>
 
@@ -83,7 +78,7 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-brand-foreground/15 pt-6 text-sm text-brand-foreground/60 sm:flex-row">
           <p>
-            &copy; {new Date().getFullYear()} Klinik Nurani. Hak cipta
+            &copy; {new Date().getFullYear()} Klinik Hejaz. Hak cipta
             terpelihara.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
@@ -110,7 +105,7 @@ export function Footer() {
           Penafian: Maklumat yang disediakan di laman web ini adalah untuk
           tujuan maklumat am dan pendidikan sahaja, serta tidak bertujuan untuk
           menggantikan nasihat, diagnosis, atau rawatan perubatan profesional.
-          Pasukan Klinik Nurani mengesyorkan agar anda sentiasa dapatkan nasihat
+          Pasukan Klinik Hejaz mengesyorkan agar anda sentiasa dapatkan nasihat
           doktor atau penyedia penjagaan kesihatan yang bertauliah untuk sebarang
           pertanyaan mengenai keadaan perubatan anda.
         </p>

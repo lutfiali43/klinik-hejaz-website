@@ -65,225 +65,112 @@ export type Treatment = {
 }
 
 export const SITE = {
-  name: 'Klinik Nurani',
+  name: 'Klinik Hejaz',
   tagline: 'Penjagaan Kesihatan Yang Anda Boleh Percaya',
   description:
-    'Klinik Nurani menawarkan rawatan profesional untuk sakit lutut, sendi, belakang, gout dan banyak lagi di Sabak Bernam dan Sungai Buloh.',
-  email: 'info@kliniknurani.com',
-  url: 'https://kliniknurani.com',
+    'Klinik Hejaz menawarkan rawatan profesional untuk sakit lutut, sendi, belakang, gout dan banyak lagi di Kuala Nerus, Kuala Terengganu, Terengganu.',
+  email: 'info@klinikhejaz.com',
+  url: 'https://klinikhejaz.com',
 }
 
 export const branches: Branch[] = [
   {
-    slug: 'sabak-bernam',
-    name: 'Klinik Nurani Sabak Bernam',
-    shortName: 'Sabak Bernam',
+    slug: 'kuala-nerus',
+    name: 'Klinik Hejaz Kuala Nerus',
+    shortName: 'Kuala Nerus',
     address:
-      'NO 11 (Ground Floor) PT.2539, 1, Jalan Raja Chulan, Pekan Sabak Bernam, 45200 Sabak Bernam, Selangor',
-    phone: '014-933 2908',
-    phoneRaw: '+60149332908',
+      'LOT 167445A, Jalan Tok Jembal, Desa Koperat Idaman, 21300 Kuala Terengganu, Terengganu',
+    phone: '017-264 3929',
+    phoneRaw: '+60172643929',
     whatsapp:
-      'https://wa.me/60149332908?text=Hi%20Klinik%20Nurani%20Sabak%20Bernam,%20saya%20nak%20tanya%20tentang%20rawatan...',
-    hours: 'Setiap hari: 9:00 pagi - 6:00 petang (Ahad tutup)',
-    doctor: 'Dr. Ahmad Adib Zainuddin',
+      'https://wa.me/60172643929?text=Hi%20Klinik%20Hejaz%20Kuala%20Nerus,%20saya%20nak%20tanya%20tentang%20rawatan...',
+    hours: 'Sabtu - Khamis: 9:00 pagi - 6:00 petang (Jumaat tutup)',
+    doctor: 'Doktor Bertugas',
     mapEmbed:
-      'https://www.google.com/maps?q=Klinik%20Nurani%20Sabak%20Bernam&output=embed',
-    googleMapsUrl: 'https://maps.app.goo.gl/v7ViJGhuVVyund4E9',
-    geo: { latitude: 3.7688006, longitude: 100.9831181 },
-    locality: 'Sabak Bernam',
-    district: 'Daerah Sabak Bernam',
-    postcode: '45200',
+      'https://www.google.com/maps?q=Klinik%20Hejaz%20Kuala%20Nerus%20Tok%20Jembal&output=embed',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Klinik+Hejaz+Tok+Jembal+Kuala+Terengganu',
+    geo: { latitude: 5.4058, longitude: 103.0965 },
+    locality: 'Kuala Nerus',
+    district: 'Daerah Kuala Nerus',
+    postcode: '21300',
     metaTitle:
-      'Klinik Nurani Sabak Bernam | Rawatan Lutut, Sendi & Gout',
+      'Klinik Hejaz Kuala Nerus | Rawatan Lutut, Sendi & Gout, Terengganu',
     metaDescription:
-      'Klinik Nurani Sabak Bernam di Jalan Raja Chulan menawarkan rawatan sakit lutut, sendi, gout dan saraf untuk penduduk Sabak Bernam, Sungai Besar dan sekitarnya. Walk-in & WhatsApp tersedia.',
+      'Klinik Hejaz Kuala Nerus di Jalan Tok Jembal menawarkan rawatan sakit lutut, sendi, gout dan saraf untuk penduduk Kuala Nerus, Kuala Terengganu dan sekitarnya. Walk-in & WhatsApp tersedia.',
     heroIntro:
-      'Klinik keluarga di tengah Pekan Sabak Bernam yang pakar dalam rawatan sakit lutut, sendi dan saraf untuk komuniti Sabak Bernam dan kawasan persisiran pantai.',
+      'Klinik keluarga di Tok Jembal, Kuala Nerus yang pakar dalam rawatan sakit lutut, sendi dan saraf untuk komuniti Kuala Nerus dan Kuala Terengganu.',
     localContent: [
-      'Terletak strategik di Jalan Raja Chulan, tepat di tengah Pekan Sabak Bernam, Klinik Nurani memudahkan penduduk daerah Sabak Bernam mendapatkan rawatan tulang, sendi dan saraf tanpa perlu jauh ke bandar besar. Ramai pesakit kami datang dari kalangan petani, penoreh getah dan nelayan yang kerap mengalami sakit lutut dan sakit belakang akibat kerja berat harian.',
-      'Sebagai klinik tempatan yang memahami gaya hidup masyarakat luar bandar, kami menyediakan rawatan suntikan sendi, pengurusan gout dan fisioterapi yang disesuaikan dengan keperluan penduduk Sabak Bernam, Sungai Besar dan Sungai Air Tawar. Kami juga menawarkan perkhidmatan lawatan ke rumah untuk warga emas di kawasan kampung sekitar yang sukar bergerak.',
+      'Terletak di Jalan Tok Jembal, Desa Koperat Idaman, Klinik Hejaz memudahkan penduduk Kuala Nerus dan Kuala Terengganu mendapatkan rawatan tulang, sendi dan saraf berhampiran dengan rumah. Ramai pesakit kami terdiri daripada keluarga, nelayan, penjawat awam dan warga emas yang kerap mengalami sakit lutut serta sakit belakang.',
+      'Sebagai klinik tempatan yang memahami keperluan komuniti pesisir Terengganu, kami menyediakan rawatan suntikan sendi, pengurusan gout, program berat badan dan penjagaan kesihatan keluarga yang menyeluruh. Lokasi kami di Tok Jembal menjadikannya pilihan mudah untuk penduduk sekitar Kuala Nerus dan Kuala Terengganu.',
     ],
     areasServed: [
-      'Pekan Sabak Bernam',
-      'Sungai Besar',
-      'Sungai Air Tawar',
-      'Sekinchan',
-      'Parit Baru',
-      'Bagan Terap',
-      'Sungai Panjang',
+      'Tok Jembal',
+      'Kuala Nerus',
+      'Gong Badak',
+      'Batu Rakit',
+      'Kuala Terengganu',
+      'Chendering',
+      'Manir',
     ],
     landmarks: [
-      'Balai Bomba Sabak Bernam',
-      'Kolej Komuniti Sabak Bernam',
-      'Masjid Jamek Daerah Sabak Bernam',
+      'Universiti Sultan Zainal Abidin (UniSZA) Gong Badak',
+      'Lapangan Terbang Sultan Mahmud',
+      'Universiti Malaysia Terengganu (UMT)',
     ],
     whyLocal: [
       {
-        title: 'Pakar Sakit Lutut Penduduk Luar Bandar',
+        title: 'Pakar Sakit Lutut & Sendi',
         description:
-          'Kami memahami sakit lutut dan sendi yang dialami petani dan pekerja ladang di Sabak Bernam, dengan rawatan yang praktikal dan berpatutan.',
+          'Kami memahami sakit lutut dan sendi yang dialami keluarga dan warga emas di Kuala Nerus, dengan rawatan yang praktikal dan berpatutan.',
       },
       {
         title: 'Mudah Dikunjungi',
         description:
-          'Lokasi di tengah pekan dengan ruang letak kereta yang mudah, sesuai untuk pesakit warga emas dari seluruh daerah Sabak Bernam.',
+          'Lokasi di Tok Jembal dengan ruang letak kereta yang selesa, berhampiran UniSZA dan Lapangan Terbang Sultan Mahmud.',
       },
       {
-        title: 'Lawatan Ke Rumah Tempatan',
+        title: 'Penjagaan Keluarga Menyeluruh',
         description:
-          'Perkhidmatan doktor ke rumah meliputi kampung-kampung sekitar Sabak Bernam untuk pesakit terlantar dan warga emas.',
+          'Dari rawatan ibu dan anak hingga pengurusan penyakit kronik, kami melayani keperluan seluruh keluarga di Kuala Nerus.',
       },
     ],
     directions:
-      'Dari Lebuhraya Persisiran Pantai (Jalan Sabak Bernam), masuk ke Pekan Sabak Bernam dan menuju Jalan Raja Chulan. Klinik berada di tingkat bawah, berhampiran kawasan pekan utama.',
+      'Dari pusat bandar Kuala Terengganu, menuju ke arah Kuala Nerus / Tok Jembal melalui Jalan Sultan Mahmud. Klinik berada di Jalan Tok Jembal, Desa Koperat Idaman, berhampiran kawasan perumahan utama.',
     localFaqs: [
       {
         question:
-          'Adakah Klinik Nurani Sabak Bernam menerima pesakit walk-in?',
+          'Adakah Klinik Hejaz Kuala Nerus menerima pesakit walk-in?',
         answer:
-          'Ya, penduduk Sabak Bernam dan kawasan sekitar boleh terus berkunjung (walk-in). Namun kami galakkan WhatsApp dahulu ke 014-933 2908 untuk menempah slot dan mengurangkan masa menunggu.',
+          'Ya, penduduk Kuala Nerus dan kawasan sekitar boleh terus berkunjung (walk-in). Namun kami galakkan WhatsApp dahulu ke 017-264 3929 untuk menempah slot dan mengurangkan masa menunggu.',
       },
       {
         question:
-          'Kawasan mana yang dilindungi perkhidmatan lawatan ke rumah dari cawangan Sabak Bernam?',
+          'Apakah waktu operasi Klinik Hejaz Kuala Nerus?',
         answer:
-          'Kami menyediakan lawatan ke rumah di sekitar Pekan Sabak Bernam, Sungai Besar, Sungai Air Tawar dan kampung-kampung berdekatan. Hubungi kami untuk mengesahkan liputan kawasan anda.',
+          'Kami dibuka setiap hari Sabtu hingga Khamis, dari 9:00 pagi hingga 6:00 petang. Klinik tutup pada hari Jumaat.',
       },
       {
         question: 'Adakah klinik ini sesuai untuk rawatan sakit lutut warga emas?',
         answer:
-          'Sangat sesuai. Cawangan Sabak Bernam kerap merawat sakit lutut dan sendi warga emas dengan suntikan sendi, fisioterapi dan pelan pemulihan yang lembut serta berkesan.',
+          'Sangat sesuai. Klinik Hejaz kerap merawat sakit lutut dan sendi warga emas dengan suntikan sendi, fisioterapi dan pelan pemulihan yang lembut serta berkesan.',
       },
     ],
     gallery: [
       {
-        src: '/galeri/klinik-nurani-sabak-bernam-fasad-kedai.jpeg',
-        alt: 'Fasad bangunan Klinik Nurani Sabak Bernam dengan papan tanda biru',
+        src: '/hero-clinic.png',
+        alt: 'Suasana ruang legar dan kaunter di Klinik Hejaz Kuala Nerus',
       },
       {
-        src: '/galeri/klinik-nurani-sabak-bernam-pintu-masuk.jpeg',
-        alt: 'Pintu masuk kaca Klinik Nurani Sabak Bernam yang sedang dibuka',
+        src: '/commitment-doctor-family.jpeg',
+        alt: 'Doktor Klinik Hejaz melayani keluarga pesakit',
       },
       {
-        src: '/galeri/klinik-nurani-sabak-bernam-kaunter-dispensari.jpeg',
-        alt: 'Kaunter dispensari dan farmasi di Klinik Nurani Sabak Bernam',
+        src: '/hero-doctor-elderly.jpeg',
+        alt: 'Doktor Klinik Hejaz merawat pesakit warga emas',
       },
       {
-        src: '/galeri/klinik-nurani-sabak-bernam-koridor-menunggu.jpeg',
-        alt: 'Koridor dan ruang menunggu berlantai marmar di Klinik Nurani Sabak Bernam',
-      },
-      {
-        src: '/galeri/klinik-nurani-sabak-bernam-bilik-rawatan.jpeg',
-        alt: 'Bilik rawatan dengan katil pemeriksaan di Klinik Nurani Sabak Bernam',
-      },
-      {
-        src: '/galeri/klinik-nurani-sabak-bernam-bilik-ultrasound.jpeg',
-        alt: 'Bilik pemeriksaan dengan mesin ultrasound di Klinik Nurani Sabak Bernam',
-      },
-    ],
-  },
-  {
-    slug: 'sungai-buloh',
-    name: 'Klinik Nurani Sungai Buloh',
-    shortName: 'Sungai Buloh',
-    address:
-      '58, Jalan BRP 1/2, Bukit Rahman Putra, 47000 Sungai Buloh, Selangor',
-    phone: '014-288 4034',
-    phoneRaw: '+60142884034',
-    whatsapp:
-      'https://wa.me/60142884034?text=Hi%20Klinik%20Nurani%20Sungai%20Buloh,%20saya%20nak%20tanya%20tentang%20rawatan...',
-    hours: 'Setiap hari: 9:00 pagi - 6:00 petang (Ahad tutup)',
-    doctor: 'Dr. Noor Aisyah Shahrin',
-    mapEmbed:
-      'https://www.google.com/maps?q=Klinik%20Nurani%20Sungai%20Buloh&output=embed',
-    googleMapsUrl: 'https://maps.app.goo.gl/jGoCRJ535nheN48C6',
-    geo: { latitude: 3.2115139, longitude: 101.5620263 },
-    locality: 'Sungai Buloh',
-    district: 'Bukit Rahman Putra',
-    postcode: '47000',
-    metaTitle:
-      'Klinik Nurani Sungai Buloh | Rawatan Lutut, Sendi & Gout',
-    metaDescription:
-      'Klinik Nurani di Bukit Rahman Putra, Sungai Buloh menawarkan rawatan sakit lutut, sendi, gout dan saraf untuk penduduk Sungai Buloh, Kota Damansara dan Kepong. Walk-in & WhatsApp tersedia.',
-    heroIntro:
-      'Klinik moden di Bukit Rahman Putra yang pakar dalam rawatan sakit lutut, sendi dan saraf untuk komuniti Sungai Buloh dan kawasan Lembah Klang utara.',
-    localContent: [
-      'Terletak di 58, Jalan BRP 1/2, Bukit Rahman Putra, Klinik Nurani Sungai Buloh berada di lokasi yang mudah diakses oleh penduduk Sungai Buloh, Kota Damansara, Kepong dan Rawang. Kawasan ini dipenuhi keluarga muda dan golongan profesional yang sering mengalami sakit belakang dan sakit lutut akibat gaya hidup duduk lama dan kerja pejabat.',
-      'Sebagai klinik tempatan di pinggir Lembah Klang, kami menyediakan rawatan sakit sendi, pembetulan postur, program berat badan dan rawatan saraf yang disesuaikan dengan gaya hidup bandar. Lokasi kami di Bukit Rahman Putra menjadikannya pilihan mudah untuk penduduk sekitar yang mahukan penjagaan kesihatan tanpa kesesakan hospital besar.',
-    ],
-    areasServed: [
-      'Bukit Rahman Putra',
-      'Sungai Buloh',
-      'Kota Damansara',
-      'Kepong',
-      'Rawang',
-      'Saujana Utama',
-      'Kundang',
-    ],
-    landmarks: [
-      'Petron Bukit Rahman Putra',
-      'Hong Leong Bank Bukit Rahman Putra',
-    ],
-    whyLocal: [
-      {
-        title: 'Pakar Sakit Belakang Golongan Profesional',
-        description:
-          'Kami memahami sakit belakang dan sakit lutut akibat kerja pejabat dan gaya hidup bandar di kawasan Sungai Buloh dan Kota Damansara.',
-      },
-      {
-        title: 'Lokasi Strategik Lembah Klang',
-        description:
-          'Mudah dihubungi dari LATAR, Guthrie Corridor dan Kepong, sesuai untuk keluarga sibuk yang mahukan rawatan pantas.',
-      },
-      {
-        title: 'Rawatan Keluarga Moden',
-        description:
-          'Dari program berat badan hingga rawatan ibu dan anak, kami melayani keperluan keluarga muda di Bukit Rahman Putra.',
-      },
-    ],
-    directions:
-      'Dari Lebuhraya LATAR atau Guthrie Corridor, keluar ke arah Sungai Buloh dan menuju Bukit Rahman Putra. Klinik berada di Jalan BRP 1/2, berhampiran kawasan kedai utama Bukit Rahman Putra.',
-    localFaqs: [
-      {
-        question: 'Adakah Klinik Nurani Sungai Buloh sesuai untuk rawatan sakit belakang?',
-        answer:
-          'Ya, cawangan Sungai Buloh kerap merawat sakit belakang dan postur untuk golongan profesional dan keluarga muda di Bukit Rahman Putra, Kota Damansara dan sekitarnya.',
-      },
-      {
-        question: 'Bolehkah saya membuat temujanji melalui WhatsApp?',
-        answer:
-          'Sudah tentu. Hubungi WhatsApp cawangan Sungai Buloh di 014-288 4034 untuk menempah slot dan mengelakkan masa menunggu yang lama.',
-      },
-      {
-        question: 'Kawasan mana yang dekat dengan cawangan Sungai Buloh?',
-        answer:
-          'Cawangan ini mudah diakses oleh penduduk Bukit Rahman Putra, Sungai Buloh, Kota Damansara, Kepong, Rawang dan Saujana Utama.',
-      },
-    ],
-    gallery: [
-      {
-        src: '/galeri/klinik-nurani-sungai-buloh-fasad-kedai.jpeg',
-        alt: 'Fasad bangunan Klinik Nurani Sungai Buloh dengan papan tanda besar',
-      },
-      {
-        src: '/galeri/klinik-nurani-sungai-buloh-pintu-masuk.jpeg',
-        alt: 'Pintu masuk Klinik Nurani Sungai Buloh dengan banner rawatan',
-      },
-      {
-        src: '/galeri/klinik-nurani-sungai-buloh-ruang-menunggu.jpeg',
-        alt: 'Ruang menunggu dengan bangku dan banner di Klinik Nurani Sungai Buloh',
-      },
-      {
-        src: '/galeri/klinik-nurani-sungai-buloh-koridor-rawatan.jpeg',
-        alt: 'Koridor menuju bilik rawatan di Klinik Nurani Sungai Buloh',
-      },
-      {
-        src: '/galeri/klinik-nurani-sungai-buloh-kaunter-pendaftaran.jpeg',
-        alt: 'Kaunter pendaftaran dan dispensari di Klinik Nurani Sungai Buloh',
-      },
-      {
-        src: '/galeri/klinik-nurani-sungai-buloh-bilik-rawatan.jpeg',
-        alt: 'Bilik konsultasi dan pemeriksaan di Klinik Nurani Sungai Buloh',
+        src: '/hero-knee.png',
+        alt: 'Rawatan sakit lutut dan sendi di Klinik Hejaz Kuala Nerus',
       },
     ],
   },
@@ -301,7 +188,7 @@ export const treatments: Treatment[] = [
     description:
       'Penilaian menyeluruh, suntikan sendi dan panduan fisioterapi untuk meredakan sakit lutut serta sendi akut dan kronik.',
     longDescription:
-      'Sakit lutut dan sendi boleh menjejaskan aktiviti harian anda dan menjadi tanda osteoartritis, arthritis, gout atau keradangan sendi. Di Klinik Nurani, kami menyediakan penilaian klinikal terperinci untuk mengenal pasti punca sebenar — sama ada disebabkan osteoartritis, kecederaan ligamen, atau keradangan sendi. Rawatan kami merangkumi suntikan sendi (joint injection), rawatan anti-radang, pengurusan ubat dan panduan fisioterapi yang disesuaikan untuk memulihkan fungsi sendi dan membantu anda kembali bergerak dengan selesa.',
+      'Sakit lutut dan sendi boleh menjejaskan aktiviti harian anda dan menjadi tanda osteoartritis, arthritis, gout atau keradangan sendi. Di Klinik Hejaz, kami menyediakan penilaian klinikal terperinci untuk mengenal pasti punca sebenar — sama ada disebabkan osteoartritis, kecederaan ligamen, atau keradangan sendi. Rawatan kami merangkumi suntikan sendi (joint injection), rawatan anti-radang, pengurusan ubat dan panduan fisioterapi yang disesuaikan untuk memulihkan fungsi sendi dan membantu anda kembali bergerak dengan selesa.',
     benefits: [
       'Penilaian klinikal punca sakit lutut & sendi',
       'Suntikan sendi untuk kelegaan segera',
@@ -350,7 +237,7 @@ export const treatments: Treatment[] = [
     description:
       'Program penurunan berat badan perubatan yang dipantau untuk hasil yang sihat dan mampan.',
     longDescription:
-      'Penurunan berat badan yang sihat memerlukan pendekatan perubatan yang terancang. Klinik Nurani menawarkan program penurunan berat badan yang dipantau oleh doktor, merangkumi penilaian kesihatan, sasaran berat badan realistik, panduan pemakanan dan pemantauan berkala untuk memastikan anda mencapai matlamat dengan selamat.',
+      'Penurunan berat badan yang sihat memerlukan pendekatan perubatan yang terancang. Klinik Hejaz menawarkan program penurunan berat badan yang dipantau oleh doktor, merangkumi penilaian kesihatan, sasaran berat badan realistik, panduan pemakanan dan pemantauan berkala untuk memastikan anda mencapai matlamat dengan selamat.',
     benefits: [
       'Penilaian kesihatan dan BMI menyeluruh',
       'Pelan pemakanan yang disesuaikan',
@@ -388,7 +275,7 @@ export const treatments: Treatment[] = [
     description:
       'Pembedahan kecil untuk menghilangkan kutil, ketulan dan tanda kulit dengan selamat.',
     longDescription:
-      'Kutil dan ketulan bukan sahaja menjejaskan penampilan tetapi juga boleh menyebabkan ketidakselesaan. Klinik Nurani menawarkan penyelesaian berkesan melalui pembedahan kecil (minor surgery) untuk menghilangkan kutil, ketulan dan tanda kulit dengan selamat dan kemas, dilakukan oleh doktor berpengalaman.',
+      'Kutil dan ketulan bukan sahaja menjejaskan penampilan tetapi juga boleh menyebabkan ketidakselesaan. Klinik Hejaz menawarkan penyelesaian berkesan melalui pembedahan kecil (minor surgery) untuk menghilangkan kutil, ketulan dan tanda kulit dengan selamat dan kemas, dilakukan oleh doktor berpengalaman.',
     benefits: [
       'Pembedahan kecil yang kemas',
       'Penilaian kutil, ketulan dan tanda kulit',
@@ -425,7 +312,7 @@ export const treatments: Treatment[] = [
     description:
       'Penjagaan ulser kronik, pembalut perubatan dan kawalan jangkitan untuk pesakit diabetes.',
     longDescription:
-      'Luka pada pesakit diabetes memerlukan penjagaan khusus kerana ia lambat sembuh dan berisiko jangkitan. Klinik Nurani menyediakan penjagaan luka diabetes profesional termasuk pembersihan luka, pembalut perubatan, kawalan jangkitan dan pemantauan berkala untuk mempercepatkan penyembuhan dan mengelakkan komplikasi.',
+      'Luka pada pesakit diabetes memerlukan penjagaan khusus kerana ia lambat sembuh dan berisiko jangkitan. Klinik Hejaz menyediakan penjagaan luka diabetes profesional termasuk pembersihan luka, pembalut perubatan, kawalan jangkitan dan pemantauan berkala untuk mempercepatkan penyembuhan dan mengelakkan komplikasi.',
     benefits: [
       'Pembersihan dan penjagaan luka profesional',
       'Pembalut perubatan berkualiti',
@@ -462,7 +349,7 @@ export const treatments: Treatment[] = [
     description:
       'Saringan, rawatan dan pemantauan berterusan untuk kencing manis (diabetes) dan darah tinggi (hipertensi).',
     longDescription:
-      'Diabetes dan darah tinggi adalah penyakit kronik yang perlu dikawal dengan teliti bagi mengelakkan komplikasi serius seperti masalah jantung, buah pinggang, mata dan saraf. Klinik Nurani menyediakan saringan gula darah dan tekanan darah, rawatan ubat, panduan pemakanan serta pemantauan berkala untuk membantu anda mengekalkan bacaan yang sihat dan menjalani kehidupan yang lebih selesa.',
+      'Diabetes dan darah tinggi adalah penyakit kronik yang perlu dikawal dengan teliti bagi mengelakkan komplikasi serius seperti masalah jantung, buah pinggang, mata dan saraf. Klinik Hejaz menyediakan saringan gula darah dan tekanan darah, rawatan ubat, panduan pemakanan serta pemantauan berkala untuk membantu anda mengekalkan bacaan yang sihat dan menjalani kehidupan yang lebih selesa.',
     benefits: [
       'Saringan gula darah dan tekanan darah',
       'Rawatan ubat yang disesuaikan',
@@ -499,7 +386,7 @@ export const treatments: Treatment[] = [
     description:
       'Rawatan untuk masalah kulit seperti ekzema, kurap, jangkitan kulat, ruam dan jerawat.',
     longDescription:
-      'Masalah kulit seperti ekzema, kurap, jangkitan kulat, ruam, gatal-gatal dan jerawat boleh menjejaskan keyakinan dan keselesaan harian. Klinik Nurani menyediakan penilaian kulit menyeluruh untuk mengenal pasti punca masalah anda dan menawarkan rawatan yang bersesuaian termasuk ubat sapuan, ubat oral dan nasihat penjagaan kulit untuk memulihkan kesihatan kulit anda.',
+      'Masalah kulit seperti ekzema, kurap, jangkitan kulat, ruam, gatal-gatal dan jerawat boleh menjejaskan keyakinan dan keselesaan harian. Klinik Hejaz menyediakan penilaian kulit menyeluruh untuk mengenal pasti punca masalah anda dan menawarkan rawatan yang bersesuaian termasuk ubat sapuan, ubat oral dan nasihat penjagaan kulit untuk memulihkan kesihatan kulit anda.',
     benefits: [
       'Penilaian punca masalah kulit',
       'Rawatan ekzema, kurap dan jangkitan kulat',
@@ -536,7 +423,7 @@ export const treatments: Treatment[] = [
     description:
       'Penjagaan kesihatan pediatrik dan penjagaan ibu untuk keluarga yang sihat dan bahagia.',
     longDescription:
-      'Kesihatan ibu dan anak adalah keutamaan kami. Klinik Nurani menyediakan pemeriksaan kesihatan kanak-kanak, nasihat pemakanan bayi, serta penjagaan kesihatan ibu sebelum dan selepas bersalin. Doktor kami mesra kanak-kanak dan komited untuk memastikan keluarga anda sentiasa sihat.',
+      'Kesihatan ibu dan anak adalah keutamaan kami. Klinik Hejaz menyediakan pemeriksaan kesihatan kanak-kanak, nasihat pemakanan bayi, serta penjagaan kesihatan ibu sebelum dan selepas bersalin. Doktor kami mesra kanak-kanak dan komited untuk memastikan keluarga anda sentiasa sihat.',
     benefits: [
       'Pemeriksaan tumbesaran kanak-kanak',
       'Nasihat pemakanan ibu dan bayi',
@@ -573,7 +460,7 @@ export const treatments: Treatment[] = [
     description:
       'Pengeluaran tahi telinga yang tersumbat secara pantas dan tanpa sakit (ear irrigation).',
     longDescription:
-      'Tahi telinga yang tersumbat boleh menyebabkan pendengaran berkurangan, rasa tidak selesa dan jangkitan. Klinik Nurani menawarkan prosedur cuci telinga (ear irrigation) yang selamat, pantas dan tanpa sakit untuk mengeluarkan tahi telinga yang tersumbat dan memulihkan pendengaran anda.',
+      'Tahi telinga yang tersumbat boleh menyebabkan pendengaran berkurangan, rasa tidak selesa dan jangkitan. Klinik Hejaz menawarkan prosedur cuci telinga (ear irrigation) yang selamat, pantas dan tanpa sakit untuk mengeluarkan tahi telinga yang tersumbat dan memulihkan pendengaran anda.',
     benefits: [
       'Prosedur pantas dan tanpa sakit',
       'Memulihkan pendengaran serta-merta',
@@ -610,7 +497,7 @@ export const treatments: Treatment[] = [
     description:
       'Terapi nebulizer untuk kecemasan asma dan pengurusan jangka panjang untuk pernafasan lega.',
     longDescription:
-      'Asma memerlukan pengurusan yang teliti untuk mengelakkan serangan yang berbahaya. Klinik Nurani menyediakan terapi nebulizer untuk melegakan serangan asma akut serta pelan pengurusan jangka panjang termasuk ubat pencegah dan pendidikan pesakit untuk mengawal asma dengan berkesan.',
+      'Asma memerlukan pengurusan yang teliti untuk mengelakkan serangan yang berbahaya. Klinik Hejaz menyediakan terapi nebulizer untuk melegakan serangan asma akut serta pelan pengurusan jangka panjang termasuk ubat pencegah dan pendidikan pesakit untuk mengawal asma dengan berkesan.',
     benefits: [
       'Terapi nebulizer untuk kelegaan segera',
       'Pelan pengurusan asma jangka panjang',
@@ -647,7 +534,7 @@ export const treatments: Treatment[] = [
     description:
       'Kawalan asid urik dan pengurusan serangan gout akut untuk mengelakkan kesakitan berulang.',
     longDescription:
-      'Gout berlaku apabila paras asid urik yang tinggi membentuk hablur pada sendi, menyebabkan kesakitan yang amat sangat. Klinik Nurani menawarkan ujian paras asid urik, rawatan untuk serangan akut dan pelan pengurusan jangka panjang termasuk nasihat pemakanan untuk mengelakkan serangan berulang.',
+      'Gout berlaku apabila paras asid urik yang tinggi membentuk hablur pada sendi, menyebabkan kesakitan yang amat sangat. Klinik Hejaz menawarkan ujian paras asid urik, rawatan untuk serangan akut dan pelan pengurusan jangka panjang termasuk nasihat pemakanan untuk mengelakkan serangan berulang.',
     benefits: [
       'Ujian dan pemantauan paras asid urik',
       'Rawatan pantas untuk serangan akut',
@@ -684,7 +571,7 @@ export const treatments: Treatment[] = [
     description:
       'Penilaian dan rawatan untuk masalah saraf seperti kebas, kesemutan, sakit menjalar dan saraf tersepit.',
     longDescription:
-      'Masalah saraf seperti kebas, kesemutan, rasa terbakar atau sakit yang menjalar boleh menjejaskan kualiti hidup dan menjadi tanda masalah yang lebih serius seperti saraf tersepit (sciatica), kerosakan saraf akibat diabetes (neuropati) atau tekanan pada saraf tulang belakang. Di Klinik Nurani, kami menyediakan penilaian klinikal menyeluruh untuk mengenal pasti punca masalah saraf anda dan menawarkan rawatan ubat, pengurusan kesakitan serta panduan pemulihan yang disesuaikan untuk membantu anda kembali berfungsi dengan selesa.',
+      'Masalah saraf seperti kebas, kesemutan, rasa terbakar atau sakit yang menjalar boleh menjejaskan kualiti hidup dan menjadi tanda masalah yang lebih serius seperti saraf tersepit (sciatica), kerosakan saraf akibat diabetes (neuropati) atau tekanan pada saraf tulang belakang. Di Klinik Hejaz, kami menyediakan penilaian klinikal menyeluruh untuk mengenal pasti punca masalah saraf anda dan menawarkan rawatan ubat, pengurusan kesakitan serta panduan pemulihan yang disesuaikan untuk membantu anda kembali berfungsi dengan selesa.',
     benefits: [
       'Penilaian punca kebas dan kesemutan',
       'Rawatan saraf tersepit dan sakit menjalar',
@@ -726,7 +613,7 @@ export const treatments: Treatment[] = [
     description:
       'Rawatan sakit belakang, sokongan lumbar dan pembetulan postur untuk kehidupan tanpa kesakitan.',
     longDescription:
-      'Sakit belakang adalah salah satu masalah kesihatan paling kerap dan boleh berpunca daripada postur yang salah, ketegangan otot atau masalah saraf tulang belakang. Klinik Nurani menyediakan penilaian postur, rawatan sakit, sokongan lumbar dan latihan pengukuhan otot teras untuk membantu anda menghapuskan sakit belakang dan mencegahnya daripada berulang.',
+      'Sakit belakang adalah salah satu masalah kesihatan paling kerap dan boleh berpunca daripada postur yang salah, ketegangan otot atau masalah saraf tulang belakang. Klinik Hejaz menyediakan penilaian postur, rawatan sakit, sokongan lumbar dan latihan pengukuhan otot teras untuk membantu anda menghapuskan sakit belakang dan mencegahnya daripada berulang.',
     benefits: [
       'Penilaian postur dan tulang belakang',
       'Rawatan kesakitan dan ketegangan otot',
@@ -771,54 +658,25 @@ export function getBranch(slug: string) {
 }
 
 // Senarai daerah / kawasan yang dilayani, dikumpulkan mengikut negeri.
-// Meliputi Selangor (termasuk Lembah Klang), Kuala Lumpur dan Negeri Sembilan.
+// Meliputi daerah-daerah utama di Terengganu.
 export const daerahGroups: { state: string; areas: string[] }[] = [
   {
-    state: 'Selangor',
+    state: 'Terengganu',
     areas: [
-      'Sabak Bernam',
-      'Kuala Selangor',
-      'Hulu Selangor',
-      'Klang',
-      'Kuala Langat',
-      'Sepang',
-      'Petaling Jaya',
-      'Shah Alam',
-      'Subang Jaya',
-      'Puchong',
-      'Gombak',
-      'Selayang',
-      'Rawang',
-      'Sungai Buloh',
-      'Kota Damansara',
-      'Hulu Langat',
-      'Kajang',
-      'Ampang',
-    ],
-  },
-  {
-    state: 'Kuala Lumpur',
-    areas: [
-      'Kuala Lumpur (Bandar)',
-      'Kepong',
-      'Cheras',
-      'Setapak',
-      'Bangsar',
-      'Sentul',
-      'Wangsa Maju',
-      'Titiwangsa',
-    ],
-  },
-  {
-    state: 'Negeri Sembilan',
-    areas: [
-      'Seremban',
-      'Port Dickson',
-      'Nilai',
-      'Rembau',
-      'Jelebu',
-      'Kuala Pilah',
-      'Tampin',
+      'Kuala Nerus',
+      'Kuala Terengganu',
+      'Tok Jembal',
+      'Gong Badak',
+      'Batu Rakit',
+      'Chendering',
+      'Manir',
+      'Marang',
+      'Hulu Terengganu',
+      'Setiu',
+      'Dungun',
+      'Kemaman',
+      'Besut',
+      'Hulu Nerus',
     ],
   },
 ]

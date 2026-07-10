@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X, MessageCircle, ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -50,15 +49,10 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b-4 border-accent-orange bg-brand shadow-[0_6px_16px_-4px_rgba(0,0,0,0.18)]">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2" aria-label="Klinik Nurani — Laman Utama">
-          <Image
-            src="/klinik-nurani-logo.png"
-            alt="Klinik Nurani"
-            width={160}
-            height={36}
-            priority
-            className="h-8 w-auto"
-          />
+        <Link href="/" className="flex items-center gap-2" aria-label="Klinik Hejaz — Laman Utama">
+          <span className="font-logo text-2xl font-extrabold italic leading-none tracking-[-0.039em] text-brand-foreground">
+            Klinik Hejaz
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="Navigasi utama">
@@ -94,7 +88,7 @@ export function Navbar() {
                           >
                             <span className="font-medium">{branch.shortName}</span>
                             <span className="block text-xs text-muted-foreground">
-                              {branch.locality}, Selangor
+                              {branch.locality}, Terengganu
                             </span>
                           </Link>
                         ))}

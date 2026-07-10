@@ -1,6 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
-import { Inter, Montserrat } from 'next/font/google'
+import { Inter, Montserrat, Be_Vietnam_Pro } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
@@ -12,42 +12,48 @@ const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['700', '800', '900'],
 })
+const beVietnam = Be_Vietnam_Pro({
+  variable: '--font-be-vietnam',
+  subsets: ['latin'],
+  weight: ['800'],
+  style: ['italic'],
+})
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://kliniknurani.com'),
+  metadataBase: new URL('https://klinikhejaz.com'),
   title: {
-    default: 'Klinik Nurani | Klinik Pakar di Sabak Bernam & Sungai Buloh',
-    template: '%s | Klinik Nurani',
+    default: 'Klinik Hejaz | Klinik Kesihatan di Kuala Nerus, Terengganu',
+    template: '%s | Klinik Hejaz',
   },
   description:
-    'Klinik Nurani menawarkan rawatan sakit lutut, sendi, belakang, gout, program berat badan dan rawatan ibu & anak di Sabak Bernam dan Sungai Buloh, Selangor.',
+    'Klinik Hejaz menawarkan rawatan sakit lutut, sendi, belakang, gout, program berat badan dan rawatan ibu & anak di Kuala Nerus, Kuala Terengganu, Terengganu.',
   keywords: [
-    'Klinik Nurani',
-    'klinik Sabak Bernam',
-    'klinik Sungai Buloh',
+    'Klinik Hejaz',
+    'klinik Kuala Nerus',
+    'klinik Kuala Terengganu',
+    'klinik Terengganu',
     'rawatan sakit lutut',
     'rawatan gout',
     'rawatan sakit belakang',
     'rawatan saraf',
-    'klinik pakar Selangor',
   ],
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Klinik Nurani | Klinik Pakar di Sabak Bernam & Sungai Buloh',
+    title: 'Klinik Hejaz | Klinik Kesihatan di Kuala Nerus, Terengganu',
     description:
-      'Rawatan profesional untuk sakit lutut, sendi, belakang, gout dan lebih lagi. Dua cawangan di Selangor.',
+      'Rawatan profesional untuk sakit lutut, sendi, belakang, gout dan lebih lagi di Kuala Nerus, Terengganu.',
     type: 'website',
     locale: 'ms_MY',
-    url: 'https://kliniknurani.com',
-    siteName: 'Klinik Nurani',
+    url: 'https://klinikhejaz.com',
+    siteName: 'Klinik Hejaz',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Klinik Nurani | Klinik Pakar di Sabak Bernam & Sungai Buloh',
+    title: 'Klinik Hejaz | Klinik Kesihatan di Kuala Nerus, Terengganu',
     description:
-      'Rawatan profesional untuk sakit lutut, sendi, belakang, gout dan lebih lagi. Dua cawangan di Selangor.',
+      'Rawatan profesional untuk sakit lutut, sendi, belakang, gout dan lebih lagi di Kuala Nerus, Terengganu.',
   },
   robots: {
     index: true,
@@ -71,7 +77,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ms" className={`${inter.variable} ${montserrat.variable} bg-background`}>
+    <html
+      lang="ms"
+      className={`${inter.variable} ${montserrat.variable} ${beVietnam.variable} bg-background`}
+    >
       <body className="font-sans antialiased">
         <TrackingNoScript />
         <Navbar />

@@ -37,7 +37,7 @@ const credibility = [
   {
     icon: HeartPulse,
     title: 'Penjagaan Menyeluruh',
-    desc: '11 jenis rawatan di bawah satu bumbung untuk seluruh keluarga.',
+    desc: 'Pelbagai jenis rawatan di bawah satu bumbung untuk seluruh keluarga.',
   },
   {
     icon: Users,
@@ -80,16 +80,16 @@ export default function HomePage() {
           <div className="max-w-2xl">
             <span className="inline-flex items-center gap-2 rounded-full bg-accent-orange/20 px-4 py-1.5 text-sm font-semibold text-accent-orange">
               <MapPin className="h-4 w-4" />
-              Sabak Bernam &amp; Sungai Buloh
+              Kuala Nerus, Terengganu
             </span>
             <h1 className="mt-5 text-balance font-heading text-4xl font-black leading-tight tracking-[-0.04em] text-brand-foreground sm:text-5xl lg:text-[3.25rem]">
               Klinik Rawatan Lutut, Sendi &amp; Saraf.{' '}
-              <span className="text-accent-orange">Sihat Cerminan Nurani.</span>
+              <span className="text-accent-orange">Sihat Bersama Klinik Hejaz.</span>
             </h1>
             <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-brand-foreground/80">
-              Klinik Nurani menawarkan rawatan profesional untuk sakit lutut,
+              Klinik Hejaz menawarkan rawatan profesional untuk sakit lutut,
               sendi, belakang, gout, program berat badan dan banyak lagi — di
-              dua cawangan mudah dihubungi di Selangor.
+              Kuala Nerus, Kuala Terengganu.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -150,7 +150,7 @@ export default function HomePage() {
               Pilihan Utama Dalam Penjagaan Tulang, Sendi &amp; Keluarga
             </h2>
             <p className="mt-3 text-pretty text-muted-foreground">
-              Rawatan paling diminati di Klinik Nurani, disokong pendekatan
+              Rawatan paling diminati di Klinik Hejaz, disokong pendekatan
               klinikal yang teliti dan penuh penjagaan.
             </p>
           </div>
