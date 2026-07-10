@@ -47,7 +47,7 @@ export function Navbar() {
     href === '/' || exact ? pathname === href : pathname.startsWith(href)
 
   return (
-    <header className="sticky top-0 z-50 bg-brand shadow-[0_6px_16px_-4px_rgba(0,0,0,0.18)]">
+    <header className="sticky top-0 z-50 bg-brand">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2" aria-label="Klinik Hejaz — Laman Utama">
           <span className="font-logo text-2xl font-extrabold italic leading-none tracking-[-0.039em] text-brand-foreground">

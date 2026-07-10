@@ -46,7 +46,7 @@ export function HeroSlideshow() {
           />
           {/* Gradient for caption legibility */}
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/70 to-transparent" />
-          <p className="absolute inset-x-0 bottom-0 p-6 font-logo text-xl italic text-white drop-shadow sm:p-8 sm:text-2xl">
+          <p className="absolute inset-x-0 bottom-0 p-6 font-logo text-2xl font-extrabold italic text-white drop-shadow sm:p-8 sm:text-3xl">
             {slide.caption}
           </p>
         </div>

@@ -10,11 +10,11 @@ import {
   Plus,
   CreditCard,
 } from 'lucide-react'
-import { branches, heroTreatments, treatments } from '@/data/siteData'
-import { TreatmentCard } from '@/components/treatment-card'
+import { branches, treatments } from '@/data/siteData'
 import { BranchSelectorCard } from '@/components/branch-selector-card'
 import { DoctorsSection } from '@/components/doctors-section'
 import { HeroSlideshow } from '@/components/hero-slideshow'
+import { TreatmentGallery } from '@/components/treatment-gallery'
 import { CtaBanner } from '@/components/cta-banner'
 import {
   MedicalClinicJsonLd,
@@ -101,7 +101,7 @@ export default function HomePage() {
             {credibility.map((item) => (
               <div
                 key={item.title}
-                className="rounded-2xl bg-brand-light p-5 text-center"
+                className="rounded-2xl border border-brand-foreground/25 p-5 text-center"
               >
                 <h3 className="font-bold text-brand-foreground">
                   {item.title}
@@ -116,7 +116,7 @@ export default function HomePage() {
       </section>
 
       {/* Hero services */}
-      <section className="bg-secondary py-16 sm:py-20">
+      <section className="bg-background py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <span className="text-sm font-semibold uppercase tracking-wider text-accent-orange-foreground">
@@ -131,11 +131,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {heroTreatments.map((treatment) => (
-              <TreatmentCard key={treatment.slug} treatment={treatment} />
-            ))}
-          </div>
+          <TreatmentGallery />
 
           <div className="mt-10 text-center">
             <Link
