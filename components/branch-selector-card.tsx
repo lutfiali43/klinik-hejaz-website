@@ -1,5 +1,4 @@
-import { Phone, MessageCircle, MapPin, Clock, ArrowRight } from 'lucide-react'
-import Link from 'next/link'
+import { Phone, MessageCircle, MapPin, Clock } from 'lucide-react'
 import type { Branch } from '@/data/siteData'
 
 export function BranchSelectorCard({ branch }: { branch: Branch }) {
@@ -17,11 +16,7 @@ export function BranchSelectorCard({ branch }: { branch: Branch }) {
       </div>
 
       <div className="flex flex-1 flex-col p-6">
-        <h3 className="text-xl font-bold text-brand">
-          <Link href={`/cawangan/${branch.slug}`} className="hover:text-accent-orange">
-            {branch.name}
-          </Link>
-        </h3>
+        <h3 className="text-xl font-bold text-brand">{branch.name}</h3>
 
         <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
           <li className="flex gap-3">
@@ -33,14 +28,6 @@ export function BranchSelectorCard({ branch }: { branch: Branch }) {
             <span>{branch.hours}</span>
           </li>
         </ul>
-
-        <Link
-          href={`/cawangan/${branch.slug}`}
-          className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand transition-colors hover:text-accent-orange"
-        >
-          Lihat halaman cawangan {branch.shortName}
-          <ArrowRight className="h-4 w-4" />
-        </Link>
 
         <div className="mt-auto flex flex-col gap-3 pt-6 sm:flex-row">
           <a

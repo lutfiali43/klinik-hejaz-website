@@ -333,10 +333,10 @@ export default async function BranchPage({
               </div>
 
               <Link
-                href="/cawangan"
+                href="/hubungi"
                 className="flex items-center justify-center gap-2 rounded-2xl border border-border bg-card px-4 py-3 text-sm font-medium text-brand transition-colors hover:border-accent-orange"
               >
-                Lihat Semua Cawangan
+                Hubungi Kami
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>

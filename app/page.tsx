@@ -10,8 +10,7 @@ import {
   Plus,
   CreditCard,
 } from 'lucide-react'
-import { branches, treatments } from '@/data/siteData'
-import { BranchSelectorCard } from '@/components/branch-selector-card'
+import { treatments } from '@/data/siteData'
 import { DoctorsSection } from '@/components/doctors-section'
 import { HeroSlideshow } from '@/components/hero-slideshow'
 import { TreatmentGallery } from '@/components/treatment-gallery'
@@ -204,29 +203,6 @@ export default function HomePage() {
                 })}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Branch locator */}
-      <section className="bg-background py-16 sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <span className="text-sm font-semibold uppercase tracking-wider text-accent-orange-foreground">
-              Cawangan Kami
-            </span>
-            <h2 className="mt-2 text-balance text-3xl font-bold text-brand sm:text-4xl">
-              Cari Cawangan Berhampiran Anda
-            </h2>
-            <p className="mt-3 text-pretty text-muted-foreground">
-              Dua lokasi strategik untuk memudahkan anda mendapatkan rawatan.
-            </p>
-          </div>
-
-          <div className="mt-10 grid gap-8 lg:grid-cols-2">
-            {branches.map((branch) => (
-              <BranchSelectorCard key={branch.slug} branch={branch} />
-            ))}
           </div>
         </div>
       </section>

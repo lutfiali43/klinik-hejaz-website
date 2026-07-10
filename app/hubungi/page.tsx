@@ -26,8 +26,8 @@ export default function ContactPage() {
       <MedicalClinicJsonLd />
       <PageHeader
         eyebrow="Hubungi Kami"
-        title="Kami Sedia Membantu Anda"
-        description="Ada soalan tentang rawatan kami? Hubungi cawangan terdekat atau hantar pertanyaan melalui borang di bawah."
+        title="Hubungi Kami"
+        description="Ada soalan tentang rawatan kami? Hubungi terus melalui telefon, WhatsApp atau hantar pertanyaan melalui borang di bawah."
       />
 
       <section className="bg-background py-16 sm:py-20">
@@ -35,7 +35,7 @@ export default function ContactPage() {
           {/* Branch contact details */}
           <div>
             <h2 className="text-2xl font-bold text-brand">
-              Maklumat Cawangan
+              Lokasi Klinik Kami
             </h2>
             <div className="mt-6 space-y-6">
               {branches.map((branch) => (

@@ -5,9 +5,9 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X, MessageCircle, ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { branches, treatments } from '@/data/siteData'
+import { treatments } from '@/data/siteData'
 
-type DropdownType = 'branches' | 'treatments'
+type DropdownType = 'treatments'
 
 const navLinks: {
   href: string
@@ -30,7 +30,6 @@ const navLinks: {
     badge: { text: 'Trending', variant: 'trending' },
   },
   { href: '/rawatan', label: 'Rawatan', dropdown: 'treatments' },
-  { href: '/cawangan', label: 'Cawangan', dropdown: 'branches' },
   { href: '/hubungi', label: 'Hubungi Kami' },
 ]
 
@@ -71,48 +70,22 @@ export function Navbar() {
                 </Link>
                 <div className="invisible absolute left-0 top-full z-50 w-64 pt-2 opacity-0 transition-all group-hover:visible group-hover:opacity-100">
                   <div className="max-h-[70vh] overflow-auto rounded-xl border border-border bg-card py-2 shadow-lg">
-                    {link.dropdown === 'branches' ? (
-                      <>
-                        <Link
-                          href="/cawangan"
-                          className="block px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary hover:text-brand"
-                        >
-                          Semua Cawangan
-                        </Link>
-                        <div className="my-1 border-t border-border" />
-                        {branches.map((branch) => (
-                          <Link
-                            key={branch.slug}
-                            href={`/cawangan/${branch.slug}`}
-                            className="block px-4 py-2 text-sm text-foreground transition-colors hover:bg-secondary hover:text-brand"
-                          >
-                            <span className="font-medium">{branch.shortName}</span>
-                            <span className="block text-xs text-muted-foreground">
-                              {branch.locality}, Terengganu
-                            </span>
-                          </Link>
-                        ))}
-                      </>
-                    ) : (
-                      <>
-                        <Link
-                          href="/rawatan"
-                          className="block px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary hover:text-brand"
-                        >
-                          Semua Rawatan
-                        </Link>
-                        <div className="my-1 border-t border-border" />
-                        {treatments.map((treatment) => (
-                          <Link
-                            key={treatment.slug}
-                            href={`/rawatan/${treatment.slug}`}
-                            className="block px-4 py-2 text-sm text-foreground transition-colors hover:bg-secondary hover:text-brand"
-                          >
-                            {treatment.shortTitle}
-                          </Link>
-                        ))}
-                      </>
-                    )}
+                    <Link
+                      href="/rawatan"
+                      className="block px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary hover:text-brand"
+                    >
+                      Semua Rawatan
+                    </Link>
+                    <div className="my-1 border-t border-border" />
+                    {treatments.map((treatment) => (
+                      <Link
+                        key={treatment.slug}
+                        href={`/rawatan/${treatment.slug}`}
+                        className="block px-4 py-2 text-sm text-foreground transition-colors hover:bg-secondary hover:text-brand"
+                      >
+                        {treatment.shortTitle}
+                      </Link>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -189,20 +162,6 @@ export function Navbar() {
                     </span>
                   )}
                 </Link>
-                {link.dropdown === 'branches' && (
-                  <div className="ml-3 flex flex-col border-l border-brand-foreground/15 pl-3">
-                    {branches.map((branch) => (
-                      <Link
-                        key={branch.slug}
-                        href={`/cawangan/${branch.slug}`}
-                        onClick={() => setOpen(false)}
-                        className="rounded-md px-3 py-2 text-sm text-brand-foreground/80 transition-colors hover:text-accent-orange"
-                      >
-                        {branch.shortName}
-                      </Link>
-                    ))}
-                  </div>
-                )}
                 {link.dropdown === 'treatments' && (
                   <div className="ml-3 flex flex-col border-l border-brand-foreground/15 pl-3">
                     {treatments.map((treatment) => (

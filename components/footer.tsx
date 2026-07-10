@@ -38,7 +38,7 @@ export function Footer() {
           {branches.map((branch) => (
             <div key={branch.slug}>
               <h3 className="text-sm font-semibold uppercase tracking-wider text-accent-orange">
-                <Link href={`/cawangan/${branch.slug}`} className="hover:text-brand-foreground">
+                <Link href="/hubungi" className="hover:text-brand-foreground">
                   {branch.shortName}
                 </Link>
               </h3>
@@ -84,9 +84,6 @@ export function Footer() {
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             <Link href="/rawatan" className="hover:text-accent-orange">
               Rawatan
-            </Link>
-            <Link href="/cawangan" className="hover:text-accent-orange">
-              Cawangan
             </Link>
             <Link href="/hubungi" className="hover:text-accent-orange">
               Hubungi
