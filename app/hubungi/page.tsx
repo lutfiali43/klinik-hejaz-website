@@ -8,15 +8,15 @@ import { MedicalClinicJsonLd } from '@/components/json-ld'
 export const metadata: Metadata = {
   title: 'Hubungi Kami',
   description:
-    'Hubungi Klinik Nurani di Sabak Bernam atau Sungai Buloh. Telefon, WhatsApp, lokasi peta dan borang pertanyaan tersedia.',
+    'Hubungi Klinik Hejaz di Kuala Nerus, Kuala Terengganu. Telefon, WhatsApp, lokasi peta dan borang pertanyaan tersedia.',
   alternates: { canonical: '/hubungi' },
   openGraph: {
-    title: 'Hubungi Kami | Klinik Nurani',
+    title: 'Hubungi Kami | Klinik Hejaz',
     description:
-      'Telefon, WhatsApp dan lokasi peta cawangan Klinik Nurani di Selangor.',
+      'Telefon, WhatsApp dan lokasi peta Klinik Hejaz di Kuala Nerus, Terengganu.',
     type: 'website',
     locale: 'ms_MY',
-    url: 'https://kliniknurani.com/hubungi',
+    url: 'https://klinikhejaz.com/hubungi',
   },
 }
 

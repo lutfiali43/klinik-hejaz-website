@@ -6,12 +6,12 @@ import { LegalSection, LegalList } from '@/components/legal-content'
 export const metadata: Metadata = {
   title: 'Terma & Syarat',
   description:
-    'Terma & Syarat penggunaan laman web Klinik Nurani. Sila baca dengan teliti sebelum menggunakan perkhidmatan dan maklumat di laman web ini.',
+    'Terma & Syarat penggunaan laman web Klinik Hejaz. Sila baca dengan teliti sebelum menggunakan perkhidmatan dan maklumat di laman web ini.',
   alternates: { canonical: '/terma-syarat' },
   openGraph: {
-    title: 'Terma & Syarat | Klinik Nurani',
+    title: 'Terma & Syarat | Klinik Hejaz',
     description:
-      'Terma & Syarat penggunaan laman web dan perkhidmatan Klinik Nurani.',
+      'Terma & Syarat penggunaan laman web dan perkhidmatan Klinik Hejaz.',
     type: 'website',
     locale: 'ms_MY',
     url: `${SITE.url}/terma-syarat`,
@@ -26,7 +26,7 @@ export default function TermsPage() {
       <PageHeader
         eyebrow="Terma & Syarat"
         title="Terma & Syarat"
-        description="Sila baca terma dan syarat ini dengan teliti sebelum menggunakan laman web dan perkhidmatan Klinik Nurani."
+        description="Sila baca terma dan syarat ini dengan teliti sebelum menggunakan laman web dan perkhidmatan Klinik Hejaz."
       />
 
       <section className="bg-background py-16 sm:py-20">

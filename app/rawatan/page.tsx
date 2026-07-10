@@ -7,15 +7,15 @@ import { treatments } from '@/data/siteData'
 export const metadata: Metadata = {
   title: 'Rawatan Kami',
   description:
-    'Senarai lengkap rawatan di Klinik Nurani — sakit lutut, sendi, belakang, gout, program berat badan, rawatan ibu & anak dan banyak lagi di Sabak Bernam & Sungai Buloh.',
+    'Senarai lengkap rawatan di Klinik Hejaz — sakit lutut, sendi, belakang, gout, program berat badan, rawatan ibu & anak dan banyak lagi di Kuala Nerus, Terengganu.',
   alternates: { canonical: '/rawatan' },
   openGraph: {
-    title: 'Rawatan Kami | Klinik Nurani',
+    title: 'Rawatan Kami | Klinik Hejaz',
     description:
-      'Senarai lengkap rawatan profesional di Klinik Nurani, Sabak Bernam & Sungai Buloh.',
+      'Senarai lengkap rawatan profesional di Klinik Hejaz, Kuala Nerus, Terengganu.',
     type: 'website',
     locale: 'ms_MY',
-    url: 'https://kliniknurani.com/rawatan',
+    url: 'https://klinikhejaz.com/rawatan',
   },
 }
 

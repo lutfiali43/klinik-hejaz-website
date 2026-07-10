@@ -201,7 +201,7 @@ export default function HomePage() {
                   Komitmen Kami
                 </span>
                 <h2 className="mt-3 text-balance font-heading text-3xl font-black leading-[1.1] tracking-[-0.04em] text-brand-foreground sm:text-4xl lg:text-5xl">
-                  <span className="text-accent-orange">Klinik Nurani</span>{' '}
+                  <span className="text-accent-orange">Klinik Hejaz</span>{' '}
                   komited memberikan perkhidmatan terbaik{' '}
                   <span className="text-accent-orange">kepada semua.</span>
                 </h2>

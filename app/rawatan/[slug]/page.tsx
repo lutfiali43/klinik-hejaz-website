@@ -34,25 +34,25 @@ export async function generateMetadata({
   const { slug } = await params
   const treatment = getTreatment(slug)
   if (!treatment) return { title: 'Rawatan Tidak Dijumpai' }
-  const description = `${treatment.tagline}. ${treatment.description} Tersedia di Klinik Nurani Sabak Bernam & Sungai Buloh.`
+  const description = `${treatment.tagline}. ${treatment.description} Tersedia di Klinik Hejaz Kuala Nerus, Terengganu.`
   return {
     title: treatment.title,
     description,
     keywords: [
       treatment.title,
       treatment.shortTitle,
-      `${treatment.shortTitle} Sabak Bernam`,
-      `${treatment.shortTitle} Sungai Buloh`,
-      'Klinik Nurani',
-      'klinik Selangor',
+      `${treatment.shortTitle} Kuala Nerus`,
+      `${treatment.shortTitle} Kuala Terengganu`,
+      'Klinik Hejaz',
+      'klinik Terengganu',
     ],
     alternates: { canonical: `/rawatan/${treatment.slug}` },
     openGraph: {
-      title: `${treatment.title} | Klinik Nurani`,
+      title: `${treatment.title} | Klinik Hejaz`,
       description,
       type: 'article',
       locale: 'ms_MY',
-      url: `https://kliniknurani.com/rawatan/${treatment.slug}`,
+      url: `https://klinikhejaz.com/rawatan/${treatment.slug}`,
     },
   }
 }

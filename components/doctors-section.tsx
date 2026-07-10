@@ -2,12 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Check, Stethoscope } from 'lucide-react'
 
-const doctors = [
-  { name: 'Dr. Aisyah', position: 'left-[4%]' },
-  { name: 'Dr. Atikah', position: 'left-1/2 -translate-x-1/2' },
-  { name: 'Dr. Adib', position: 'right-[4%]' },
-]
-
 const expertise = [
   'Rawatan Tulang & Sendi',
   'Penjagaan Ibu & Anak',
@@ -33,9 +27,9 @@ export function DoctorsSection() {
               <span className="text-accent-orange">doktor kami.</span>
             </h2>
             <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-              Pasukan doktor Klinik Nurani yang berpengalaman dan berdedikasi
+              Pasukan doktor Klinik Hejaz yang berpengalaman dan berdedikasi
               komited memberikan penjagaan yang menyeluruh, mesra dan dipercayai
-              untuk anda serta keluarga di setiap cawangan kami.
+              untuk anda serta keluarga di Kuala Nerus.
             </p>
 
             <div className="mt-8">
@@ -70,7 +64,7 @@ export function DoctorsSection() {
             <div className="relative overflow-hidden rounded-3xl bg-brand">
               <Image
                 src="/doktor-kami.jpeg"
-                alt="Barisan doktor Klinik Nurani: Dr. Aisyah, Dr. Atikah dan Dr. Adib"
+                alt="Barisan doktor Klinik Hejaz Kuala Nerus"
                 width={1200}
                 height={900}
                 className="h-auto w-full object-cover"
@@ -78,18 +72,6 @@ export function DoctorsSection() {
               />
               {/* gradient for card legibility */}
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-brand/70 to-transparent" />
-
-              {/* floating doctor name cards */}
-              {doctors.map((doctor) => (
-                <div
-                  key={doctor.name}
-                  className={`absolute bottom-4 ${doctor.position} rounded-xl border border-brand-foreground/15 bg-brand/40 px-3 py-1.5 shadow-lg backdrop-blur-sm sm:bottom-6`}
-                >
-                  <span className="block text-xs font-bold text-brand-foreground sm:text-sm">
-                    {doctor.name}
-                  </span>
-                </div>
-              ))}
             </div>
           </div>
         </div>

@@ -21,11 +21,11 @@ export function BranchTeamSection({ branch }: { branch: Branch }) {
               Pasukan Kami
             </span>
             <h2 className="mt-4 text-balance font-heading text-3xl font-black leading-[1.1] tracking-[-0.03em] text-brand sm:text-4xl lg:text-5xl">
-              Pasukan mesra Klinik Nurani{' '}
+              Pasukan mesra Klinik Hejaz{' '}
               <span className="text-accent-orange">{branch.shortName}.</span>
             </h2>
             <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-              Barisan doktor dan staf Klinik Nurani {branch.shortName} sentiasa
+              Barisan doktor dan staf Klinik Hejaz {branch.shortName} sentiasa
               bersedia melayani anda dengan mesra, penuh kesabaran dan
               profesional — memastikan setiap kunjungan anda di {branch.locality}{' '}
               terasa selesa dan dipercayai.
@@ -44,8 +44,8 @@ export function BranchTeamSection({ branch }: { branch: Branch }) {
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl bg-brand">
               <Image
-                src={`/team-${branch.slug}.jpeg`}
-                alt={`Pasukan Klinik Nurani ${branch.shortName} — doktor dan staf yang mesra dan profesional`}
+                src="/commitment-doctor-family.jpeg"
+                alt={`Pasukan Klinik Hejaz ${branch.shortName} — doktor dan staf yang mesra dan profesional`}
                 width={1200}
                 height={900}
                 className="h-auto w-full object-cover"

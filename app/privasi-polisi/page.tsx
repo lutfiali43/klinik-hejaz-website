@@ -6,12 +6,12 @@ import { LegalSection, LegalList } from '@/components/legal-content'
 export const metadata: Metadata = {
   title: 'Dasar Privasi',
   description:
-    'Dasar Privasi Klinik Nurani selaras dengan Akta Perlindungan Data Peribadi 2010 (PDPA) Malaysia. Ketahui cara kami mengumpul, menggunakan dan melindungi maklumat peribadi anda.',
+    'Dasar Privasi Klinik Hejaz selaras dengan Akta Perlindungan Data Peribadi 2010 (PDPA) Malaysia. Ketahui cara kami mengumpul, menggunakan dan melindungi maklumat peribadi anda.',
   alternates: { canonical: '/privasi-polisi' },
   openGraph: {
-    title: 'Dasar Privasi | Klinik Nurani',
+    title: 'Dasar Privasi | Klinik Hejaz',
     description:
-      'Dasar Privasi Klinik Nurani selaras dengan Akta Perlindungan Data Peribadi 2010 (PDPA) Malaysia.',
+      'Dasar Privasi Klinik Hejaz selaras dengan Akta Perlindungan Data Peribadi 2010 (PDPA) Malaysia.',
     type: 'website',
     locale: 'ms_MY',
     url: `${SITE.url}/privasi-polisi`,

@@ -12,10 +12,10 @@ export function BranchGallery({ branch }: { branch: Branch }) {
         className="flex items-center gap-2 text-xl font-bold text-brand"
       >
         <ImageIcon className="h-5 w-5 shrink-0 text-accent-orange" />
-        Galeri Gambar di Klinik Nurani {branch.shortName}
+        Galeri Gambar di Klinik Hejaz {branch.shortName}
       </h3>
       <p className="mt-2 text-sm text-muted-foreground">
-        Lihat suasana, kemudahan dan persekitaran rawatan di Klinik Nurani{' '}
+        Lihat suasana, kemudahan dan persekitaran rawatan di Klinik Hejaz{' '}
         {branch.locality}.
       </p>
       <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">

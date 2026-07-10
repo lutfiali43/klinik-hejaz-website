@@ -71,7 +71,7 @@ export default async function BranchPage({
         <div
           aria-hidden="true"
           className="absolute inset-0 bg-cover bg-center bg-scroll md:bg-fixed"
-          style={{ backgroundImage: `url('/storefront-${branch.slug}.jpeg')` }}
+          style={{ backgroundImage: `url('/hero-clinic.png')` }}
         />
         {/* Navy gradient for text legibility */}
         <div
@@ -150,7 +150,7 @@ export default async function BranchPage({
 
             {/* Why choose this branch */}
             <h3 className="mt-10 text-xl font-bold text-brand">
-              Mengapa Pilih Klinik Nurani {branch.shortName}?
+              Mengapa Pilih Klinik Hejaz {branch.shortName}?
             </h3>
             <div className="mt-5 grid gap-5 sm:grid-cols-3">
               {branch.whyLocal.map((item) => (
@@ -188,10 +188,10 @@ export default async function BranchPage({
 
             {/* Nearby landmarks */}
             <h3 className="mt-10 text-xl font-bold text-brand">
-              Lokasi Berhampiran Klinik Nurani {branch.shortName}
+              Lokasi Berhampiran Klinik Hejaz {branch.shortName}
             </h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Klinik Nurani {branch.shortName} terletak berhampiran dengan
+              Klinik Hejaz {branch.shortName} terletak berhampiran dengan
               mercu tanda berikut, memudahkan anda mencari kami:
             </p>
             <ul className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -326,7 +326,7 @@ export default async function BranchPage({
                   <div>
                     <p className="font-semibold text-brand">{branch.doctor}</p>
                     <p className="text-sm text-muted-foreground">
-                      Klinik Nurani {branch.shortName}
+                      Klinik Hejaz {branch.shortName}
                     </p>
                   </div>
                 </div>

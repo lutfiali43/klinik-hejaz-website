@@ -8,15 +8,15 @@ import { WhatsAppForm } from '@/components/whatsapp-form'
 export const metadata: Metadata = {
   title: 'Borang Permohonan Rawatan',
   description:
-    'Hantar permohonan rawatan terus ke WhatsApp cawangan Klinik Nurani. Pilih daerah, cawangan dan jenis rawatan untuk tindakan segera.',
+    'Hantar permohonan rawatan terus ke WhatsApp Klinik Hejaz Kuala Nerus. Pilih jenis rawatan untuk tindakan segera.',
   alternates: { canonical: '/permohonan' },
   openGraph: {
-    title: 'Borang Permohonan Rawatan | Klinik Nurani',
+    title: 'Borang Permohonan Rawatan | Klinik Hejaz',
     description:
-      'Hantar permohonan rawatan terus ke WhatsApp cawangan Klinik Nurani untuk tindakan segera.',
+      'Hantar permohonan rawatan terus ke WhatsApp Klinik Hejaz Kuala Nerus untuk tindakan segera.',
     type: 'website',
     locale: 'ms_MY',
-    url: 'https://kliniknurani.com/permohonan',
+    url: 'https://klinikhejaz.com/permohonan',
   },
 }
 
