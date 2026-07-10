@@ -1,0 +1,39 @@
+# Klinik Nurani
+
+> Klinik Nurani ialah klinik kesihatan di Selangor, Malaysia yang menawarkan rawatan profesional untuk sakit lutut, sakit sendi, sakit belakang, gout, sakit saraf, program berat badan, rawatan ibu & anak dan banyak lagi. Terdapat dua cawangan: Sabak Bernam dan Sungai Buloh. Pesakit boleh menghantar permohonan rawatan terus ke WhatsApp cawangan pilihan.
+
+## Maklumat Penting
+
+- Nama: Klinik Nurani
+- Lokasi: Sabak Bernam & Sungai Buloh, Selangor, Malaysia
+- Laman web: https://kliniknurani.com
+- Bahasa utama: Bahasa Melayu (ms-MY)
+- Tempahan: Borang permohonan rawatan dihantar terus ke WhatsApp cawangan terpilih.
+
+## Halaman Utama
+
+- [Laman Utama](https://kliniknurani.com/): Gambaran keseluruhan klinik, rawatan utama dan barisan doktor.
+- [Senarai Rawatan](https://kliniknurani.com/rawatan): Katalog penuh semua rawatan yang ditawarkan.
+- [Cawangan](https://kliniknurani.com/cawangan): Lokasi, waktu operasi dan hubungan setiap cawangan.
+- [Permohonan Rawatan (WhatsApp)](https://kliniknurani.com/permohonan): Borang untuk menghantar permohonan rawatan ke WhatsApp cawangan.
+- [Hubungi Kami](https://kliniknurani.com/hubungi): Maklumat perhubungan klinik.
+
+## Cawangan
+
+- [Klinik Nurani Sabak Bernam](https://kliniknurani.com/cawangan/sabak-bernam)
+- [Klinik Nurani Sungai Buloh](https://kliniknurani.com/cawangan/sungai-buloh)
+
+## Rawatan
+
+- [Rawatan Sakit Lutut](https://kliniknurani.com/rawatan/rawatan-sakit-lutut)
+- [Rawatan Sakit Sendi](https://kliniknurani.com/rawatan/rawatan-sakit-sendi)
+- [Rawatan Sakit Belakang](https://kliniknurani.com/rawatan/rawatan-sakit-belakang)
+- [Rawatan Gout](https://kliniknurani.com/rawatan/rawatan-gout)
+- [Rawatan Saraf](https://kliniknurani.com/rawatan/rawatan-saraf)
+- [Program Berat Badan](https://kliniknurani.com/rawatan/program-berat-badan)
+- [Rawatan Ibu & Anak](https://kliniknurani.com/rawatan/rawatan-ibu-dan-anak)
+- [Cuci Telinga](https://kliniknurani.com/rawatan/cuci-telinga)
+- [Nebulizer & Asthma](https://kliniknurani.com/rawatan/nebulizer-dan-asthma)
+- [Luka Diabetes](https://kliniknurani.com/rawatan/luka-diabetes)
+- [Kutil & Ketulan](https://kliniknurani.com/rawatan/kutil-dan-ketuat)
+- [Lawatan Ke Rumah](https://kliniknurani.com/rawatan/lawatan-ke-rumah)
