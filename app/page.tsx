@@ -1,11 +1,8 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import {
   Phone,
   MessageCircle,
   ShieldCheck,
-  HeartPulse,
-  Users,
   Clock,
   MapPin,
   ArrowRight,
@@ -17,6 +14,7 @@ import { branches, heroTreatments, treatments } from '@/data/siteData'
 import { TreatmentCard } from '@/components/treatment-card'
 import { BranchSelectorCard } from '@/components/branch-selector-card'
 import { DoctorsSection } from '@/components/doctors-section'
+import { HeroSlideshow } from '@/components/hero-slideshow'
 import { CtaBanner } from '@/components/cta-banner'
 import {
   MedicalClinicJsonLd,
@@ -26,24 +24,20 @@ import {
 
 const credibility = [
   {
-    icon: Stethoscope,
     title: 'Doktor Berpengalaman',
-    desc: 'Pasukan perubatan terlatih dengan pengalaman luas merawat pelbagai keadaan.',
+    desc: 'Pasukan perubatan terlatih.',
   },
   {
-    icon: ShieldCheck,
     title: 'Rawatan Dipercayai',
-    desc: 'Pendekatan klinikal yang selamat dan berasaskan bukti untuk setiap pesakit.',
+    desc: 'Klinikal, selamat & berbukti.',
   },
   {
-    icon: HeartPulse,
     title: 'Penjagaan Menyeluruh',
-    desc: 'Pelbagai jenis rawatan di bawah satu bumbung untuk seluruh keluarga.',
+    desc: 'Semua rawatan satu bumbung.',
   },
   {
-    icon: Users,
     title: 'Mesra Keluarga',
-    desc: 'Persekitaran yang selesa dan mesra untuk semua peringkat umur.',
+    desc: 'Selesa untuk semua umur.',
   },
 ]
 
@@ -98,44 +92,25 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Image card */}
-            <div className="relative min-h-[360px] overflow-hidden rounded-3xl sm:min-h-[440px] lg:min-h-full">
-              <Image
-                src="/doktor-konsultasi-pesakit.jpeg"
-                alt="Doktor Klinik Hejaz memberi konsultasi kepada pesakit warga emas"
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 45vw"
-                className="object-cover"
-              />
-            </div>
+            {/* Image slideshow */}
+            <HeroSlideshow />
           </div>
-        </div>
-      </section>
 
-      {/* Credibility */}
-      <section className="bg-background py-16 sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {credibility.map((item) => {
-              const Icon = item.icon
-              return (
-                <div
-                  key={item.title}
-                  className="rounded-2xl border border-border bg-card p-6 text-center"
-                >
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-brand/10 text-brand">
-                    <Icon className="h-7 w-7" />
-                  </div>
-                  <h3 className="mt-4 font-bold text-foreground">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {item.desc}
-                  </p>
-                </div>
-              )
-            })}
+          {/* Credibility strip */}
+          <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:mt-6 lg:grid-cols-4 lg:gap-4">
+            {credibility.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-2xl bg-brand-light p-5 text-center"
+              >
+                <h3 className="font-bold text-brand-foreground">
+                  {item.title}
+                </h3>
+                <p className="mt-1 text-sm leading-relaxed text-brand-foreground/80">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
