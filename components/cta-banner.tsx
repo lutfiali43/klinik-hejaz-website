@@ -2,7 +2,7 @@ import { Phone, MessageCircle } from 'lucide-react'
 import { branches } from '@/data/siteData'
 
 export function CtaBanner({
-  title = 'Sedia Untuk Penjagaan Yang Lebih Baik?',
+  title = 'Nak hubungi Klinik Hejaz hari ini?',
   subtitle = 'Hubungi kami hari ini. Pasukan Klinik Hejaz sedia membantu anda dan keluarga.',
 }: {
   title?: string

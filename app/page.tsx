@@ -58,8 +58,13 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           <div className="grid gap-5 lg:grid-cols-[1.15fr_1fr] lg:gap-6">
             {/* Title card — brighter olive */}
-            <div className="flex flex-col justify-between rounded-3xl bg-brand-light p-8 sm:p-10 lg:p-12">
-              <div>
+            <div className="relative flex flex-col justify-between overflow-hidden rounded-3xl bg-brand-light p-8 sm:p-10 lg:p-12">
+              {/* Islamic pattern — white lines at 10% opacity */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 bg-[url('/islamic-pattern.png')] bg-[length:280px_auto] bg-repeat opacity-10 [filter:brightness(0)_invert(1)]"
+              />
+              <div className="relative">
                 <span className="inline-flex items-center gap-2 rounded-full bg-brand-foreground/15 px-4 py-1.5 text-sm font-semibold text-brand-foreground">
                   <MapPin className="h-4 w-4" />
                   Kuala Nerus, Terengganu
@@ -73,7 +78,7 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+              <div className="relative mt-10 flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="/permohonan"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-accent-orange px-6 py-3 text-base font-semibold text-accent-orange-foreground transition-opacity hover:opacity-90"
