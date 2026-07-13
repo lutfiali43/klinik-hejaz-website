@@ -41,9 +41,9 @@ const credibility = [
 ]
 
 const commitmentHighlights = [
-  { icon: Stethoscope, label: 'Doktor yang berpengalaman' },
-  { icon: ShieldCheck, label: 'Rawatan yang selamat dan mudah' },
-  { icon: CreditCard, label: 'Cara bayar fleksibel' },
+  { icon: Stethoscope, label: 'Doktor yang mesra' },
+  { icon: ShieldCheck, label: 'Klinik selesa & bersih' },
+  { icon: CreditCard, label: 'Harga Rawatan Mampu Milik' },
 ]
 
 export default function HomePage() {
@@ -151,17 +151,12 @@ export default function HomePage() {
             {/* Background photo */}
             <div
               aria-hidden="true"
-              className="absolute inset-0 bg-[url('/commitment-doctor-family.jpeg')] bg-cover bg-center"
+              className="absolute inset-0 bg-[url('/komitmen-doktor-pakcik.jpeg')] bg-cover bg-center"
             />
-            {/* Top + bottom navy gradient — keeps faces in the middle visible */}
+            {/* Top + bottom olive gradient — keeps faces in the middle visible */}
             <div
               aria-hidden="true"
               className="absolute inset-0 bg-gradient-to-b from-brand/90 via-brand/25 to-brand/95"
-            />
-            {/* Soft white line-pattern overlay */}
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 bg-[url('/line-pattern-white.png')] bg-[length:1200px_auto] bg-repeat opacity-5"
             />
 
             <div className="relative flex min-h-[600px] flex-col justify-between gap-12 p-8 sm:p-12 lg:min-h-[660px]">
@@ -171,16 +166,12 @@ export default function HomePage() {
                   <Plus className="h-4 w-4" strokeWidth={3} />
                   Komitmen Kami
                 </span>
-                <h2 className="mt-3 text-balance font-heading text-3xl font-black leading-[1.1] tracking-[-0.04em] text-brand-foreground sm:text-4xl lg:text-5xl">
+                <h2 className="mt-3 text-balance font-logo text-3xl font-extrabold italic leading-[1.15] tracking-[-0.039em] text-brand-foreground sm:text-4xl lg:text-[2.75rem]">
+                  Daripada yang muda sehingga yang tua,{' '}
                   <span className="text-accent-orange">Klinik Hejaz</span>{' '}
-                  komited memberikan perkhidmatan terbaik{' '}
-                  <span className="text-accent-orange">kepada semua.</span>
+                  sentiasa komited memberikan penjagaan kesihatan yang terbaik
+                  dan menyeluruh buat warga Kuala Nerus.
                 </h2>
-                <p className="mt-4 max-w-xl text-pretty leading-relaxed text-brand-foreground/85">
-                  Dari kanak-kanak hingga warga emas, kami melayani setiap
-                  pesakit dengan penuh penjagaan, ketelitian dan rasa hormat —
-                  kerana kesihatan anda adalah amanah kami.
-                </p>
               </div>
 
               {/* Highlights (bottom) */}
