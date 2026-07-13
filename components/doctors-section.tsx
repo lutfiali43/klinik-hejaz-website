@@ -75,7 +75,7 @@ export function DoctorsSection() {
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-brand/70 to-transparent" />
 
               {/* frosted caption */}
-              <div className="absolute inset-x-4 top-4 rounded-2xl border border-white/25 bg-white/15 px-5 py-3 backdrop-blur-md sm:inset-x-6 sm:top-6">
+              <div className="absolute inset-x-4 bottom-4 rounded-2xl border border-white/25 bg-white/15 px-5 py-3 backdrop-blur-md sm:inset-x-6 sm:bottom-6">
                 <p className="text-pretty font-logo text-sm font-extrabold italic leading-snug text-white drop-shadow sm:text-base">
                   Dr. Irfan &amp; Klinik Hejaz jemput anda semua datang
                 </p>

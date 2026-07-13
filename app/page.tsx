@@ -59,10 +59,10 @@ export default function HomePage() {
           <div className="grid gap-5 lg:grid-cols-[1.15fr_1fr] lg:gap-6">
             {/* Title card — brighter olive */}
             <div className="relative flex flex-col justify-between overflow-hidden rounded-3xl bg-brand-light p-8 sm:p-10 lg:p-12">
-              {/* Islamic pattern — white lines at 10% opacity */}
+              {/* Islamic pattern — golden lattice at 10% opacity */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 bg-[url('/islamic-pattern.png')] bg-[length:280px_auto] bg-repeat opacity-10 [filter:brightness(0)_invert(1)]"
+                className="pointer-events-none absolute inset-0 bg-[url('/hejaz-pattern-bg.png')] bg-cover bg-center bg-no-repeat opacity-10"
               />
               <div className="relative">
                 <span className="inline-flex items-center gap-2 rounded-full bg-brand-foreground/15 px-4 py-1.5 text-sm font-semibold text-brand-foreground">
