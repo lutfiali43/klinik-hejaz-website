@@ -22,14 +22,15 @@ export function DoctorsSection() {
               <Stethoscope className="h-4 w-4" />
               Doktor Kami
             </span>
-            <h2 className="mt-4 text-balance font-heading text-3xl font-black leading-[1.1] tracking-[-0.03em] text-brand sm:text-4xl lg:text-5xl">
-              Memperkenalkan barisan{' '}
-              <span className="text-accent-orange">doktor kami.</span>
+            <h2 className="mt-4 text-balance font-logo text-3xl font-extrabold italic leading-[1.15] tracking-[-0.039em] text-brand sm:text-4xl lg:text-5xl">
+              Bersama <span className="text-accent-orange">Dr. Irfan</span> di
+              Kuala Nerus!
             </h2>
             <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-              Pasukan doktor Klinik Hejaz yang berpengalaman dan berdedikasi
-              komited memberikan penjagaan yang menyeluruh, mesra dan dipercayai
-              untuk anda serta keluarga di Kuala Nerus.
+              Dr. Irfan sedia menyambut anda dan keluarga di Klinik Hejaz dengan
+              layanan yang mesra dan penuh penjagaan. Dengan pendekatan yang
+              teliti dan peribadi, setiap pesakit dirawat seperti keluarga
+              sendiri.
             </p>
 
             <div className="mt-8">
@@ -63,8 +64,8 @@ export function DoctorsSection() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl bg-brand">
               <Image
-                src="/doktor-kami.jpeg"
-                alt="Barisan doktor Klinik Hejaz Kuala Nerus"
+                src="/dr-irfan-klinik-hejaz.jpeg"
+                alt="Dr. Irfan di hadapan Klinik Hejaz Kuala Nerus"
                 width={1200}
                 height={900}
                 className="h-auto w-full object-cover"
