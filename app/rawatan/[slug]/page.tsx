@@ -110,7 +110,7 @@ export default async function TreatmentDetailPage({
             Kembali ke senarai rawatan
           </Link>
 
-          <div className="mt-6 grid gap-5 lg:grid-cols-[4fr_1fr] lg:gap-6">
+          <div className="mt-6 grid gap-5 lg:grid-cols-[3fr_1fr] lg:gap-6">
             {/* Text card */}
             <div className="relative flex flex-col justify-between overflow-hidden rounded-3xl bg-brand-light p-8 sm:p-10 lg:p-12">
               {/* Islamic pattern — golden lattice at 20% opacity */}
