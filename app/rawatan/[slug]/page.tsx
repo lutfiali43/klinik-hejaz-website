@@ -16,6 +16,7 @@ import {
 } from '@/data/siteData'
 import { FaqAccordion } from '@/components/faq-accordion'
 import { WeightLossTools } from '@/components/weight-loss-tools'
+import { TreatmentHeroSlider } from '@/components/treatment-hero-slider'
 import {
   FaqJsonLd,
   TreatmentJsonLd,
@@ -68,6 +69,23 @@ export default async function TreatmentDetailPage({
 
   const Icon = treatment.icon
   const related = treatments.filter((t) => t.slug !== treatment.slug).slice(0, 3)
+  const branch = branches[0]
+
+  const heroSlides = [
+    treatment.cardBg && {
+      src: treatment.cardBg,
+      alt: `Rawatan ${treatment.title} di Klinik Hejaz Kuala Nerus`,
+      caption: treatment.shortTitle,
+    },
+    {
+      src: '/doktor-kaunter-gout.jpeg',
+      alt: 'Doktor Klinik Hejaz melayani pesakit di kaunter',
+    },
+    {
+      src: '/dr-irfan-klinik-hejaz.jpeg',
+      alt: 'Dr. Irfan di hadapan Klinik Hejaz Kuala Nerus',
+    },
+  ].filter(Boolean) as { src: string; alt: string; caption?: string }[]
 
   return (
     <>
@@ -82,28 +100,8 @@ export default async function TreatmentDetailPage({
       <FaqJsonLd faqs={treatment.faqs} />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-brand">
-        {treatment.cardBg && (
-          <>
-            {/* Soft parallax treatment photo */}
-            <div
-              aria-hidden="true"
-              className="absolute inset-0 bg-cover bg-right bg-scroll md:bg-fixed"
-              style={{ backgroundImage: `url('${treatment.cardBg}')` }}
-            />
-            {/* Navy gradient for text legibility */}
-            <div
-              aria-hidden="true"
-              className="absolute inset-0 bg-gradient-to-r from-brand via-brand/85 to-brand/40"
-            />
-            {/* Soft white line-pattern overlay */}
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 bg-[url('/line-pattern-white.png')] bg-[length:1200px_auto] bg-repeat opacity-5"
-            />
-          </>
-        )}
-        <div className="relative mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+      <section className="bg-brand">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           <Link
             href="/rawatan"
             className="inline-flex items-center gap-2 text-sm font-medium text-brand-foreground/70 transition-colors hover:text-accent-orange"
@@ -112,18 +110,52 @@ export default async function TreatmentDetailPage({
             Kembali ke senarai rawatan
           </Link>
 
-          <div className="mt-6 flex flex-col gap-6 sm:flex-row sm:items-center">
-            <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-accent-orange text-accent-orange-foreground">
-              <Icon className="h-8 w-8" />
+          <div className="mt-6 grid gap-5 lg:grid-cols-[4fr_1fr] lg:gap-6">
+            {/* Text card */}
+            <div className="relative flex flex-col justify-between overflow-hidden rounded-3xl bg-brand-light p-8 sm:p-10 lg:p-12">
+              {/* Islamic pattern — golden lattice at 20% opacity */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 bg-[url('/hejaz-pattern-bg.png')] bg-cover bg-center bg-no-repeat opacity-20"
+              />
+              <div className="relative">
+                <span className="inline-flex items-center gap-2 rounded-full bg-brand-foreground/15 px-4 py-1.5 text-sm font-semibold text-brand-foreground">
+                  <Icon className="h-4 w-4" />
+                  {treatment.category}
+                </span>
+                <h1 className="mt-6 text-balance font-logo text-4xl font-extrabold italic leading-[1.05] tracking-[-0.039em] text-brand-foreground sm:text-5xl">
+                  {treatment.title}
+                </h1>
+                <p className="mt-5 max-w-2xl text-pretty font-logo text-lg italic leading-relaxed text-accent-orange">
+                  {treatment.tagline}
+                </p>
+                <p className="mt-4 max-w-2xl text-pretty leading-relaxed text-brand-foreground/85">
+                  {treatment.description}
+                </p>
+              </div>
+
+              <div className="relative mt-10 flex flex-col gap-3 sm:flex-row">
+                <a
+                  href={branch.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-accent-orange px-6 py-3 text-base font-semibold text-accent-orange-foreground transition-opacity hover:opacity-90"
+                >
+                  <MessageCircle className="h-5 w-5" />
+                  WhatsApp Kami
+                </a>
+                <a
+                  href={`tel:${branch.phoneRaw}`}
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-foreground/40 bg-transparent px-6 py-3 text-base font-semibold text-brand-foreground transition-colors hover:bg-brand-foreground/10"
+                >
+                  <Phone className="h-5 w-5" />
+                  {branch.phone}
+                </a>
+              </div>
             </div>
-            <div>
-              <h1 className="text-balance text-4xl font-extrabold text-brand-foreground sm:text-5xl">
-                {treatment.title}
-              </h1>
-              <p className="mt-2 text-pretty text-lg text-accent-orange">
-                {treatment.tagline}
-              </p>
-            </div>
+
+            {/* Image slider */}
+            <TreatmentHeroSlider slides={heroSlides} />
           </div>
         </div>
       </section>
