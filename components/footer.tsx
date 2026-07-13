@@ -22,7 +22,7 @@ export function Footer() {
               Rawatan Utama
             </h3>
             <ul className="mt-4 space-y-2 text-sm">
-              {treatments.slice(0, 6).map((t) => (
+              {treatments.map((t) => (
                 <li key={t.slug}>
                   <Link
                     href={`/rawatan/${t.slug}`}
@@ -39,7 +39,7 @@ export function Footer() {
             <div key={branch.slug}>
               <h3 className="text-sm font-semibold uppercase tracking-wider text-accent-orange">
                 <Link href="/hubungi" className="hover:text-brand-foreground">
-                  {branch.shortName}
+                  Klinik Hejaz {branch.shortName}
                 </Link>
               </h3>
               <ul className="mt-4 space-y-3 text-sm">
