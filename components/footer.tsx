@@ -98,7 +98,7 @@ export function Footer() {
           </div>
         </div>
 
-        <p className="mt-6 max-w-4xl text-xs font-thin leading-relaxed text-brand-foreground/40">
+        <p className="mt-6 max-w-4xl text-xs font-light leading-relaxed text-brand-foreground/70">
           Penafian: Maklumat yang disediakan di laman web ini adalah untuk
           tujuan maklumat am dan pendidikan sahaja, serta tidak bertujuan untuk
           menggantikan nasihat, diagnosis, atau rawatan perubatan profesional.

@@ -9,7 +9,7 @@ export function TreatmentCard({ treatment }: { treatment: Treatment }) {
     return (
       <Link
         href={`/rawatan/${treatment.slug}`}
-        className="group relative isolate flex min-h-[300px] flex-col overflow-hidden rounded-2xl border border-brand p-6 shadow-sm transition-all hover:shadow-lg sm:min-h-[280px]"
+        className="group relative isolate flex min-h-[300px] flex-col overflow-hidden rounded-2xl border border-brand bg-brand p-6 shadow-sm transition-all hover:shadow-lg sm:min-h-[280px]"
       >
         {/* Background image */}
         <div
@@ -39,7 +39,7 @@ export function TreatmentCard({ treatment }: { treatment: Treatment }) {
         <p className="mt-2 flex-1 max-w-[78%] text-sm leading-relaxed text-brand-foreground/85">
           {treatment.description}
         </p>
-        <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent-orange">
+        <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-foreground">
           Lihat butiran
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </span>

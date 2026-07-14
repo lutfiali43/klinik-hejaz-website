@@ -70,7 +70,7 @@
   --secondary-foreground: oklch(0.38 0.072 124);
   --muted: oklch(0.97 0.01 120);
   --muted-foreground: oklch(0.44 0.03 130);
-  --accent: oklch(0.74 0.15 68);
+  --accent: oklch(0.79 0.145 71);
   --accent-foreground: oklch(0.22 0.04 130);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.92 0.01 120);
@@ -85,10 +85,10 @@
   --brand: oklch(0.38 0.072 124);
   --brand-light: oklch(0.43 0.082 124);
   --brand-foreground: oklch(0.99 0 0);
-  --accent-orange: oklch(0.74 0.15 68);
+  --accent-orange: oklch(0.79 0.145 71);
   --accent-orange-foreground: oklch(0.22 0.04 130);
   --accent-strong: oklch(0.5 0.13 55);
-  --whatsapp: oklch(0.65 0.18 145);
+  --whatsapp: oklch(0.52 0.15 150);
   --whatsapp-foreground: oklch(0.99 0 0);
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
