@@ -23,7 +23,7 @@ export function DoctorsSection() {
               Doktor Kami
             </span>
             <h2 className="mt-4 text-balance font-logo text-3xl font-extrabold italic leading-[1.15] tracking-[-0.039em] text-brand sm:text-4xl lg:text-5xl">
-              Bersama <span className="text-accent-orange">Dr. Irfan</span> di
+              Bersama <span className="text-accent-strong">Dr. Irfan</span> di
               Kuala Nerus!
             </h2>
             <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">

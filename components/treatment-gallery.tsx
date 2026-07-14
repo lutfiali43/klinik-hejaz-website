@@ -30,14 +30,14 @@ const toneClasses: Record<
     card: 'bg-brand',
     chip: 'bg-brand-foreground/15 text-brand-foreground group-hover:bg-accent-orange group-hover:text-accent-orange-foreground',
     title: 'text-brand-foreground',
-    excerpt: 'text-brand-foreground/75',
-    link: 'text-accent-orange',
+    excerpt: 'text-brand-foreground/90',
+    link: 'text-brand-foreground',
   },
   mid: {
     card: 'bg-brand-light',
     chip: 'bg-brand-foreground/20 text-brand-foreground group-hover:bg-accent-orange group-hover:text-accent-orange-foreground',
     title: 'text-brand-foreground',
-    excerpt: 'text-brand-foreground/80',
+    excerpt: 'text-brand-foreground/90',
     link: 'text-brand-foreground',
   },
   light: {

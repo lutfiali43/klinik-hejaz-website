@@ -76,7 +76,7 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-brand-foreground/15 pt-6 text-sm text-brand-foreground/60 sm:flex-row">
+        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-brand-foreground/15 pt-6 text-sm text-brand-foreground/80 sm:flex-row">
           <p>
             &copy; {new Date().getFullYear()} Klinik Hejaz. Hak cipta
             terpelihara.
