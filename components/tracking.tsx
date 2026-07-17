@@ -16,10 +16,25 @@ import Script from 'next/script'
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID
 const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID
 
+/** GA4 (gtag.js) — sentiasa aktif site-wide untuk Klinik Hejaz. */
+const GA4_ID = 'G-P16PLHVEJP'
+
 /** Scripts to render near the top of <body>. */
 export function TrackingScripts() {
   return (
     <>
+      <Script
+        id="ga4-src"
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
+      />
+      <Script id="ga4-init" strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA4_ID}');`}
+      </Script>
+
       {GTM_ID ? (
         <Script id="gtm-base" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
