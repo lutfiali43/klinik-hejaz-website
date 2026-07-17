@@ -17,11 +17,11 @@ export function Footer() {
             </p>
           </div>
 
-          <div>
+          <div className="lg:col-span-2">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-accent-orange">
               Rawatan Utama
             </h3>
-            <ul className="mt-4 space-y-2 text-sm">
+            <ul className="mt-4 grid grid-cols-1 gap-x-8 gap-y-2 text-sm sm:grid-cols-2">
               {treatments.map((t) => (
                 <li key={t.slug}>
                   <Link
