@@ -225,7 +225,7 @@ export default async function TreatmentDetailPage({
                     className="rounded-xl bg-secondary p-4"
                   >
                     <p className="font-semibold text-foreground">
-                      {branch.shortName}
+                      {branch.name}
                     </p>
                     <div className="mt-3 flex flex-col gap-2">
                       <a

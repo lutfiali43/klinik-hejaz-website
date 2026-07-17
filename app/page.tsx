@@ -14,6 +14,7 @@ import { treatments } from '@/data/siteData'
 import { DoctorsSection } from '@/components/doctors-section'
 import { HeroSlideshow } from '@/components/hero-slideshow'
 import { TreatmentGallery } from '@/components/treatment-gallery'
+import { ClinicGallery } from '@/components/clinic-gallery'
 import { CtaBanner } from '@/components/cta-banner'
 import {
   MedicalClinicJsonLd,
@@ -204,6 +205,8 @@ export default function HomePage() {
       </section>
 
       <DoctorsSection />
+
+      <ClinicGallery />
 
       <CtaBanner />
     </>
