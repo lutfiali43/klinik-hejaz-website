@@ -62,6 +62,7 @@ export type Treatment = {
   symptoms: string[]
   faqs: FaqItem[]
   cardBg?: string
+  heroImage?: string
 }
 
 export const SITE = {
@@ -224,10 +225,12 @@ export const treatments: Treatment[] = [
       },
     ],
     cardBg: '/card-bg/sakit-lutut.png',
+    heroImage: '/hejaz-lutut.png',
   },
   {
     slug: 'program-berat-badan',
     cardBg: '/card-bg/berat-badan.png',
+    heroImage: '/hejaz-beratbadan.png',
     title: 'Program Penurunan Berat Badan',
     shortTitle: 'Berat Badan',
     category: 'Kesihatan Am',
@@ -266,6 +269,7 @@ export const treatments: Treatment[] = [
   {
     slug: 'kutil-dan-ketuat',
     cardBg: '/card-bg/kutil-ketuat.png',
+    heroImage: '/hejaz-kutil-ketulan.png',
     title: 'Kutil & Ketulan',
     shortTitle: 'Kutil & Ketulan',
     category: 'Kesihatan Am',
@@ -303,6 +307,7 @@ export const treatments: Treatment[] = [
   {
     slug: 'luka-diabetes',
     cardBg: '/card-bg/luka-diabetes.png',
+    heroImage: '/hejaz-luka-diabetes.png',
     title: 'Luka Diabetes',
     shortTitle: 'Luka Diabetes',
     category: 'Kesihatan Am',
@@ -340,6 +345,7 @@ export const treatments: Treatment[] = [
   {
     slug: 'diabetes-dan-darah-tinggi',
     cardBg: '/card-bg/diabetes-darah-tinggi.png',
+    heroImage: '/hejaz-diabetes-darahtinggi.png',
     title: 'Diabetes & Darah Tinggi',
     shortTitle: 'Diabetes & Darah Tinggi',
     category: 'Kesihatan Am',
@@ -377,6 +383,7 @@ export const treatments: Treatment[] = [
   {
     slug: 'rawatan-sakit-kulit',
     cardBg: '/card-bg/sakit-kulit.png',
+    heroImage: '/hejaz-rawatankulit.png',
     title: 'Rawatan Sakit Kulit',
     shortTitle: 'Sakit Kulit',
     category: 'Kesihatan Am',
@@ -414,6 +421,7 @@ export const treatments: Treatment[] = [
   {
     slug: 'rawatan-ibu-dan-anak',
     cardBg: '/card-bg/ibu-anak.png',
+    heroImage: '/hejaz-ibu-anak.png',
     title: 'Rawatan Ibu & Anak',
     shortTitle: 'Ibu & Anak',
     category: 'Keluarga',
@@ -451,6 +459,7 @@ export const treatments: Treatment[] = [
   {
     slug: 'cuci-telinga',
     cardBg: '/card-bg/sakit-telinga.png',
+    heroImage: '/hejaz-sakit-cucitelinga.png',
     title: 'Cuci Telinga',
     shortTitle: 'Cuci Telinga',
     category: 'Kesihatan Am',
@@ -488,6 +497,7 @@ export const treatments: Treatment[] = [
   {
     slug: 'nebulizer-dan-asthma',
     cardBg: '/card-bg/nebulizer-sedut-kahak.png',
+    heroImage: '/hejaz-asthma.png',
     title: 'Nebulizer & Asthma',
     shortTitle: 'Asthma',
     category: 'Kesihatan Am',
@@ -525,6 +535,7 @@ export const treatments: Treatment[] = [
   {
     slug: 'rawatan-gout',
     cardBg: '/card-bg/gout.png',
+    heroImage: '/hejaz-gout.png',
     title: 'Rawatan Gout',
     shortTitle: 'Gout',
     category: 'Tulang & Sendi',
@@ -562,6 +573,7 @@ export const treatments: Treatment[] = [
   {
     slug: 'rawatan-saraf',
     cardBg: '/card-bg/sakit-saraf.png',
+    heroImage: '/hejaz-sakitsaraf.png',
     title: 'Rawatan Saraf',
     shortTitle: 'Sakit Saraf',
     category: 'Tulang & Sendi',
@@ -604,6 +616,7 @@ export const treatments: Treatment[] = [
   {
     slug: 'rawatan-sakit-belakang',
     cardBg: '/card-bg/sakit-belakang.png',
+    heroImage: '/hejaz-sakitbelakang.png',
     title: 'Rawatan Sakit Belakang',
     shortTitle: 'Sakit Belakang',
     category: 'Tulang & Sendi',

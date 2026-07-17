@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import {
   Check,
   Phone,
@@ -16,7 +17,6 @@ import {
 } from '@/data/siteData'
 import { FaqAccordion } from '@/components/faq-accordion'
 import { WeightLossTools } from '@/components/weight-loss-tools'
-import { TreatmentHeroSlider } from '@/components/treatment-hero-slider'
 import {
   FaqJsonLd,
   TreatmentJsonLd,
@@ -70,22 +70,7 @@ export default async function TreatmentDetailPage({
   const Icon = treatment.icon
   const related = treatments.filter((t) => t.slug !== treatment.slug).slice(0, 3)
   const branch = branches[0]
-
-  const heroSlides = [
-    treatment.cardBg && {
-      src: treatment.cardBg,
-      alt: `Rawatan ${treatment.title} di Klinik Hejaz Kuala Nerus`,
-      caption: treatment.shortTitle,
-    },
-    {
-      src: '/doktor-kaunter-gout.jpeg',
-      alt: 'Doktor Klinik Hejaz melayani pesakit di kaunter',
-    },
-    {
-      src: '/dr-irfan-klinik-hejaz.jpeg',
-      alt: 'Dr. Irfan di hadapan Klinik Hejaz Kuala Nerus',
-    },
-  ].filter(Boolean) as { src: string; alt: string; caption?: string }[]
+  const heroImage = treatment.heroImage ?? treatment.cardBg
 
   return (
     <>
@@ -154,8 +139,19 @@ export default async function TreatmentDetailPage({
               </div>
             </div>
 
-            {/* Image slider */}
-            <TreatmentHeroSlider slides={heroSlides} />
+            {/* Treatment image */}
+            {heroImage && (
+              <div className="relative min-h-[260px] overflow-hidden rounded-3xl bg-brand-light lg:min-h-0">
+                <Image
+                  src={heroImage || "/placeholder.svg"}
+                  alt={`Rawatan ${treatment.title} di Klinik Hejaz Kuala Nerus`}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 25vw"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            )}
           </div>
         </div>
       </section>
