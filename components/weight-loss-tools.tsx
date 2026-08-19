@@ -1,7 +1,8 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import { Activity, Scale, MessageCircle, CheckCircle2, Flame } from 'lucide-react'
+import { useRouter } from 'next/navigation'
+import { Activity, Scale, MessageCircle, Flame } from 'lucide-react'
 import { branches, daerahGroups } from '@/data/siteData'
 import { submitToSheet } from '@/lib/submit-to-sheet'
 
@@ -34,7 +35,7 @@ function bmiCategory(bmi: number): { label: string; tone: Tone } {
 }
 
 export function WeightLossTools() {
-  const [submitted, setSubmitted] = useState(false)
+  const router = useRouter()
   const [form, setForm] = useState({
     gender: 'perempuan',
     age: '',
@@ -117,7 +118,7 @@ export function WeightLossTools() {
     const text = encodeURIComponent(lines.join('\n'))
     const base = selectedBranch.whatsapp.split('?')[0]
     window.open(`${base}?text=${text}`, '_blank', 'noopener,noreferrer')
-    setSubmitted(true)
+    router.push('/terima-kasih')
   }
 
   const inputClass =
@@ -355,29 +356,10 @@ export function WeightLossTools() {
 
         {/* WhatsApp form with results */}
         <div className="mt-6">
-          {submitted ? (
-            <div className="flex flex-col items-center justify-center rounded-2xl border border-border bg-card p-10 text-center shadow-sm">
-              <CheckCircle2 className="h-14 w-14 text-whatsapp" />
-              <h3 className="mt-4 text-xl font-bold text-brand">
-                Terima kasih, {form.name || 'rakan'}!
-              </h3>
-              <p className="mt-2 max-w-sm text-sm text-muted-foreground">
-                Tetingkap WhatsApp telah dibuka dan keputusan BMI &amp; kalori
-                anda sedia untuk dihantar ke {selectedBranch?.name}.
-              </p>
-              <button
-                type="button"
-                onClick={() => setSubmitted(false)}
-                className="mt-6 rounded-full border border-brand px-5 py-2.5 text-sm font-semibold text-brand transition-colors hover:bg-brand hover:text-brand-foreground"
-              >
-                Hantar Permohonan Lain
-              </button>
-            </div>
-          ) : (
-            <form
-              onSubmit={handleSubmit}
-              className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8"
-            >
+          <form
+            onSubmit={handleSubmit}
+            className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8"
+          >
               <h3 className="text-xl font-bold text-brand">
                 Hantar Keputusan ke WhatsApp Cawangan
               </h3>
@@ -485,8 +467,7 @@ export function WeightLossTools() {
                   Hantar Keputusan ke WhatsApp
                 </button>
               </div>
-            </form>
-          )}
+          </form>
         </div>
       </div>
     </section>
