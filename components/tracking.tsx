@@ -13,11 +13,13 @@ import Script from 'next/script'
  * NOTE: For static export these are inlined at build time, so set them before
  * running the production build.
  */
-const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID
 const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID
 
 /** GA4 (gtag.js) — sentiasa aktif site-wide untuk Klinik Hejaz. */
 const GA4_ID = 'G-P16PLHVEJP'
+
+/** Google Tag Manager — sentiasa aktif site-wide untuk Klinik Hejaz. */
+const GTM_ID = 'GTM-5QZZQG22'
 
 /** Scripts to render near the top of <body>. */
 export function TrackingScripts() {
