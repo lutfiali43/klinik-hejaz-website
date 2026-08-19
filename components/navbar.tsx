@@ -116,7 +116,7 @@ export function Navbar() {
 
         <div className="hidden items-center gap-2 md:flex">
           <Link
-            href="/permohonan"
+            href="/hubungi"
             className="inline-flex items-center gap-2 rounded-full bg-accent-orange px-4 py-2 text-sm font-semibold text-accent-orange-foreground transition-opacity hover:opacity-90"
           >
             <MessageCircle className="h-4 w-4" />
@@ -179,7 +179,7 @@ export function Navbar() {
               </div>
             ))}
             <Link
-              href="/permohonan"
+              href="/hubungi"
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-accent-orange px-4 py-3 text-base font-semibold text-accent-orange-foreground"
             >

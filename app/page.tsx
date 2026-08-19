@@ -81,7 +81,7 @@ export default function HomePage() {
 
               <div className="relative mt-10 flex flex-col gap-3 sm:flex-row">
                 <Link
-                  href="/permohonan"
+                  href="/hubungi"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-accent-orange px-6 py-3 text-base font-semibold text-accent-orange-foreground transition-opacity hover:opacity-90"
                 >
                   <MessageCircle className="h-5 w-5" />
