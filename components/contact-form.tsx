@@ -1,11 +1,12 @@
 'use client'
 
 import { useState } from 'react'
-import { Send, CheckCircle2 } from 'lucide-react'
+import { useRouter } from 'next/navigation'
+import { Send } from 'lucide-react'
 import { branches } from '@/data/siteData'
 
 export function ContactForm() {
-  const [submitted, setSubmitted] = useState(false)
+  const router = useRouter()
   const [form, setForm] = useState({
     name: '',
     phone: '',
@@ -21,29 +22,7 @@ export function ContactForm() {
     )
     const base = branch.whatsapp.split('?')[0]
     window.open(`${base}?text=${text}`, '_blank', 'noopener,noreferrer')
-    setSubmitted(true)
-  }
-
-  if (submitted) {
-    return (
-      <div className="flex flex-col items-center justify-center rounded-2xl border border-border bg-card p-10 text-center">
-        <CheckCircle2 className="h-14 w-14 text-accent-orange-foreground" />
-        <h3 className="mt-4 text-xl font-bold text-brand">
-          Terima kasih, {form.name || 'rakan'}!
-        </h3>
-        <p className="mt-2 text-sm text-muted-foreground">
-          Tetingkap WhatsApp telah dibuka. Jika tidak, sila hubungi kami terus
-          melalui nombor cawangan.
-        </p>
-        <button
-          type="button"
-          onClick={() => setSubmitted(false)}
-          className="mt-6 rounded-full border border-brand px-5 py-2.5 text-sm font-semibold text-brand transition-colors hover:bg-brand hover:text-brand-foreground"
-        >
-          Hantar Pertanyaan Lain
-        </button>
-      </div>
-    )
+    router.push('/terima-kasih')
   }
 
   return (
